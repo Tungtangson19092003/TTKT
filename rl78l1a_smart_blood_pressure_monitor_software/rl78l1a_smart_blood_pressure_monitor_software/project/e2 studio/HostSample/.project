@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>HostSample</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.renesas.cdt.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>com.renesas.cdt.core.kpitcnature</nature>
+		<nature>com.renesas.cdt.core.kpitccnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>C Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/sample_app</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/sample_profile</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/lcd</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/plf</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/serial</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/timer</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/arch.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/arch.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/compiler.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/compiler.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/ll.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/ll.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/rscip_api.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/rscip_api.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/rskrl78g14def.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/rskrl78g14def.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/include/types.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/include/types.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/gap</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/gatt</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/rble_host.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/rble_host.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/rble_if_api_cb.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/rble_if_api_cb.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/sm</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/vs</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/db_handle.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/db_handle.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/host</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/prf_sel.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/prf_sel.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/rble.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/rble.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/rble_api.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/rble_api.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/rble_api_custom.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/rble_api_custom.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/rble_app.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/rble_app.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/rble_trans.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/rble_trans.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip_cntl.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip_cntl.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip_cntl.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip_cntl.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip_ext.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip_ext.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip_uart.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip_uart.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/rscip/rscip_uart.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/rscip/rscip_uart.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/sample_app/app.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/sample_app/app.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/sample_profile/scp</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/lcd/lcd.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/lcd/lcd.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/lcd/lcd.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/lcd/lcd.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/plf/plf.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/plf/plf.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/plf/plf.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/plf/plf.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/serial/uart.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/serial/uart.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/serial/uart.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/serial/uart.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/timer/timer.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/timer/timer.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/Platform/driver/timer/timer.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Platform/driver/timer/timer.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/gap/rble_api_gap.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/gap/rble_api_gap.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/gatt/rble_api_gatt.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/gatt/rble_api_gatt.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/sm/rble_api_sm.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/sm/rble_api_sm.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/host/vs/rble_api_vs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/host/vs/rble_api_vs.c</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/include/host/rble_host.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/include/host/rble_host.h</locationURI>
+		</link>
+		<link>
+			<name>C Source Files/rBLE/sample_profile/scp/scps.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/rBLE/sample_profile/scp/scps.c</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

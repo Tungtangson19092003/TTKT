@@ -1,0 +1,3852 @@
+Renesas Optimizing Linker (V2.05.00 )             12-Jun-2017 17:47:54
+
+*** Options ***
+
+-subcommand=LinkerSubCommand.tmp
+-input=".\C Source Files/rBLE/host/gap\rble_api_gap.obj"
+-input=".\C Source Files/rBLE/host/gatt\rble_api_gatt.obj"
+-input=".\C Source Files/rBLE/host/sm\rble_api_sm.obj"
+-input=".\C Source Files/rBLE/host/vs\rble_api_vs.obj"
+-input=".\C Source Files/rBLE/host\rble_host.obj"
+-input=".\C Source Files/rBLE/host\rble_if_api_cb.obj"
+-input=".\C Source Files/rBLE/rscip\rscip.obj"
+-input=".\C Source Files/rBLE/rscip\rscip_cntl.obj"
+-input=".\C Source Files/rBLE/rscip\rscip_uart.obj"
+-input=".\C Source Files/rBLE/sample_profile/scp\scps.obj"
+-input=".\C Source Files/rBLE/sample_app\app.obj"
+-input=".\C Source Files/Platform/driver/lcd\lcd.obj"
+-input=".\C Source Files/Platform/driver/plf\plf.obj"
+-input=".\C Source Files/Platform/driver/serial\uart.obj"
+-input=".\C Source Files/Platform/driver/timer\timer.obj"
+-input=".\src\r_cg_cgc.obj"
+-input=".\src\r_cg_cgc_user.obj"
+-input=".\src\r_cg_it.obj"
+-input=".\src\r_cg_it_user.obj"
+-input=".\src\r_cg_port.obj"
+-input=".\src\r_cg_port_user.obj"
+-input=".\cstart.obj"
+-input=".\stkinit.obj"
+-library="C:\PROGRA~2\Renesas\RL78\1_3_0\lib\rl78em4s.lib"
+-library="C:\PROGRA~2\Renesas\RL78\1_3_0\lib\rl78em4r.lib"
+-input=".\src\r_cg_lcd.obj"
+-input=".\src\r_cg_lcd_user.obj"
+-library="C:\PROGRA~2\Renesas\RL78\1_3_0\lib\malloc_n.lib"
+-input=".\src\r_cg_12adc.obj"
+-input=".\src\r_cg_12adc_user.obj"
+-input=".\src\r_cg_iica.obj"
+-input=".\src\r_cg_iica_user.obj"
+-input=".\src\r_cg_intp.obj"
+-input=".\src\r_cg_intp_user.obj"
+-input=".\src\r_cg_main.obj"
+-input=".\src\r_cg_sau.obj"
+-input=".\src\r_cg_sau_user.obj"
+-input=".\src\r_cg_systeminit.obj"
+-input=".\src\r_cg_tau.obj"
+-input=".\src\r_cg_tau_user.obj"
+-list=HostSample.map
+-show=all
+-nooptimize
+-entry=_start
+-auto_section_layout
+-security_id=00000000000000000000
+-ocdbg=84
+-debug_monitor=17e00-17fff
+-user_opt_byte=eeffe0
+-output=HostSample.abs
+-debug
+-nocompress
+-rom=.data=.dataR,.sdata=.sdataR
+-stack
+-nomessage
+-device=C:/Renesas/e2_studio_53/DebugComp/RL78\Common\DR5F11MMF.DVF
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.data
+                                  000000d8  000001fd       126   2
+.text
+                                  000001fe  00000626       429   1
+.RLIB
+                                  00000627  00000a82       45c   1
+.SLIB
+                                  00000a83  00000ad4        52   1
+.const
+                                  00003000  00003197       198   2
+.textf
+                                  00003198  00007c95      4afe   1
+.monitor2
+                                  00017e00  00017fff       200   1
+.bss
+                                  000fe900  000ffb0f      1210   2
+.dataR
+                                  000ffb10  000ffc35       126   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00001336 Byte(s)
+ROMDATA SECTION:  00000556 Byte(s)
+PROGRAM SECTION:  000053d5 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=.vect
+FILE=rlink_generates_01
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_02
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_04
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_03
+                                  000000ce  000000d7         a
+
+SECTION=.data
+FILE=.\C Source Files\rBLE\host\vs\rble_api_vs.obj
+                                  000000d8  000000d9         2
+FILE=.\C Source Files\rBLE\sample_profile\scp\scps.obj
+                                  000000da  00000159        80
+FILE=.\C Source Files\rBLE\sample_app\app.obj
+                                  0000015a  000001f6        9d
+FILE=.\src\r_cg_main.obj
+                                  000001f8  000001f8         1
+FILE=rand
+                                  000001fa  000001fd         4
+
+SECTION=.text
+FILE=.\src\r_cg_it_user.obj
+                                  000001fe  0000044e       251
+  _r_it_interrupt@1
+                                  000001fe       251   func ,l         0
+FILE=.\cstart.obj
+                                  0000044f  000004a1        53
+  _start
+                                  0000044f         0   entry,g         0
+  _exit
+                                  000004a0         0   none ,g         1
+FILE=.\src\r_cg_12adc_user.obj
+                                  000004a2  00000526        85
+  _r_12adc_interrupt@1
+                                  000004a2        85   func ,l         0
+FILE=.\src\r_cg_iica_user.obj
+                                  00000527  00000546        20
+  _r_iica0_interrupt@1
+                                  00000527        20   func ,l         0
+FILE=.\src\r_cg_intp_user.obj
+                                  00000547  00000590        4a
+  _r_intc0_interrupt@1
+                                  00000547        4a   func ,l         0
+FILE=.\src\r_cg_sau_user.obj
+                                  00000591  00000622        92
+  _r_uart0_interrupt_receive@1
+                                  00000591        61   func ,l         0
+  _r_uart0_interrupt_send@1
+                                  000005f2        31   func ,l         0
+FILE=.\src\r_cg_tau_user.obj
+                                  00000623  00000626         4
+  _r_tau0_channel0_interrupt@1
+                                  00000623         2   func ,l         0
+  _r_tau0_channel7_interrupt@1
+                                  00000625         2   func ,l         0
+
+SECTION=.RLIB
+FILE=memcpy
+                                  00000627  00000637        11
+  _memcpy
+                                  00000627         0   none ,g        55
+FILE=memset
+                                  00000638  00000645         e
+  _memset
+                                  00000638         0   none ,g        12
+FILE=_COM_fdiv
+                                  00000646  0000077f       13a
+  __COM_fdiv
+                                  0000066d         0   none ,g         6
+FILE=_COM_fge
+                                  00000780  00000795        16
+  __COM_fge
+                                  00000780         0   none ,g         2
+FILE=_COM_fmul
+                                  00000796  000008b0       11b
+  __COM_fmul
+                                  000007d4         0   none ,g         6
+FILE=_COM_ftoul
+                                  000008b1  000008bc         c
+  __COM_ftoul
+                                  000008b1         0   none ,g         2
+FILE=_COM_funordered
+                                  000008bd  000008c7         b
+  __COM_funordered
+                                  000008bd         0   none ,g         2
+FILE=_COM_ultof
+                                  000008c8  000008cd         6
+  __COM_ultof
+                                  000008c8         0   none ,g         5
+FILE=_COM_mulul
+                                  000008ce  0000092a        5d
+  __COM_mulul
+                                  000008ce         0   none ,g         1
+FILE=_REL_fcmp
+                                  0000092b  00000962        38
+  __REL_fcmp
+                                  0000092b         0   none ,g         1
+FILE=_REL_fordered_core
+                                  00000963  0000097e        1c
+  __REL_fordered_core
+                                  00000963         0   none ,g         2
+FILE=_REL_ftol
+                                  0000097f  000009b3        35
+  __REL_ftol
+                                  0000097f         0   none ,g         1
+FILE=_REL_f_check
+                                  000009b4  000009e6        33
+  __REL_f_check
+                                  000009b4         0   none ,g         2
+FILE=_REL_f_ieee754
+                                  000009e7  000009f6        10
+  __REL_f_ieee754
+                                  000009e7         0   none ,g         2
+FILE=_REL_f_inf
+                                  000009f7  00000a00         a
+  __REL_f_inf
+                                  000009f7         0   none ,g         8
+FILE=_REL_f_round
+                                  00000a01  00000a1f        1f
+  __REL_f_round
+                                  00000a01         0   none ,g         2
+FILE=_REL_ltof
+                                  00000a20  00000a69        4a
+  __REL_ltof
+                                  00000a20         0   none ,g         1
+FILE=_COM_lshr
+                                  00000a6a  00000a7e        15
+  __COM_lshr
+                                  00000a6a         0   none ,g         1
+FILE=_COM_mului
+                                  00000a7f  00000a82         4
+  __COM_mului
+                                  00000a7f         0   none ,g         4
+
+SECTION=.SLIB
+FILE=memcmp
+                                  00000a83  00000a94        12
+  _memcmp
+                                  00000a83         0   none ,g         1
+FILE=rand
+                                  00000a95  00000ad4        40
+  _rand
+                                  00000a95        38   func ,g         5
+  _srand
+                                  00000acd         8   func ,g         0
+
+SECTION=.const
+FILE=.\C Source Files\rBLE\host\rble_if_api_cb.obj
+                                  00003000  0000317a       17b
+FILE=.\src\r_cg_12adc.obj
+                                  0000317c  0000317f         4
+  _g_12ad_adansa0_gui
+                                  0000317c         2   data ,g         0
+  _g_12ad_adexicr_gui
+                                  0000317e         2   data ,g         0
+FILE=.\src\r_cg_main.obj
+                                  00003180  00003197        18
+  _g_NumberData
+                                  00003180        18   data ,g         c
+
+SECTION=.textf
+FILE=.\C Source Files\rBLE\host\gap\rble_api_gap.obj
+                                  00003198  000038c9       732
+  _RBLE_GAP_Reset
+                                  00003198        69   func ,g         1
+  _RBLE_GAP_Set_Name
+                                  00003201        31   func ,g         0
+  _RBLE_GAP_Observation_Enable
+                                  00003232        69   func ,g         0
+  _RBLE_GAP_Observation_Disable
+                                  0000329b        1b   func ,g         0
+  _RBLE_GAP_Broadcast_Enable
+                                  000032b6        c0   func ,g         1
+  _RBLE_GAP_Broadcast_Disable
+                                  00003376        1b   func ,g         0
+  _RBLE_GAP_Set_Bonding_Mode
+                                  00003391        2a   func ,g         1
+  _RBLE_GAP_Set_Security_Request
+                                  000033bb        24   func ,g         1
+  _RBLE_GAP_Get_Device_Info
+                                  000033df        1b   func ,g         0
+  _RBLE_GAP_Get_White_List_Size
+                                  000033fa        1b   func ,g         0
+  _RBLE_GAP_Add_To_White_List
+                                  00003415        31   func ,g         0
+  _RBLE_GAP_Del_From_White_List
+                                  00003446        3b   func ,g         0
+  _RBLE_GAP_Get_Remote_Device_Name
+                                  00003481        c1   func ,g         0
+  _RBLE_GAP_Get_Remote_Device_Info
+                                  00003542        2a   func ,g         0
+  _RBLE_GAP_Device_Search
+                                  0000356c        26   func ,g         0
+  _RBLE_GAP_Set_Random_Address
+                                  00003592        2b   func ,g         0
+  _RBLE_GAP_Set_Privacy_Feature
+                                  000035bd        26   func ,g         0
+  _RBLE_GAP_Create_Connection
+                                  000035e3        c1   func ,g         0
+  _RBLE_GAP_Connection_Cancel
+                                  000036a4        1b   func ,g         0
+  _RBLE_GAP_Disconnect
+                                  000036bf        2a   func ,g         1
+  _RBLE_GAP_Start_Bonding
+                                  000036e9        4d   func ,g         0
+  _RBLE_GAP_Bonding_Info_Ind
+                                  00003736        35   func ,g         0
+  _RBLE_GAP_Bonding_Response
+                                  0000376b        51   func ,g         1
+  _RBLE_GAP_Change_Connection_Param
+                                  000037bc        77   func ,g         0
+  _RBLE_GAP_Channel_Map_Req
+                                  00003833        43   func ,g         0
+  _RBLE_GAP_Read_RSSI
+                                  00003876        2a   func ,g         0
+  _RBLE_GAP_Authorized_Ind
+                                  000038a0        2a   func ,g         0
+FILE=.\C Source Files\rBLE\host\gatt\rble_api_gatt.obj
+                                  000038ca  00003d9a       4d1
+  _RBLE_GATT_Enable
+                                  000038ca        49   func ,g         1
+  _RBLE_GATT_Discovery_Service_Request
+                                  00003913        76   func ,g         0
+  _RBLE_GATT_Discovery_Char_Request
+                                  00003989        76   func ,g         0
+  _RBLE_GATT_Discovery_Char_Descriptor_Request
+                                  000039ff        4b   func ,g         0
+  _RBLE_GATT_Read_Char_Request
+                                  00003a4a        b5   func ,g         0
+  _RBLE_GATT_Write_Char_Request
+                                  00003aff        7e   func ,g         0
+  _RBLE_GATT_Write_Reliable_Request
+                                  00003b7d        9a   func ,g         0
+  _RBLE_GATT_Execute_Write_Char_Request
+                                  00003c17        2d   func ,g         0
+  _RBLE_GATT_Notify_Request
+                                  00003c44        3b   func ,g         1
+  _RBLE_GATT_Indicate_Request
+                                  00003c7f        3b   func ,g         1
+  _RBLE_GATT_Write_Response
+                                  00003cba        4a   func ,g         1
+  _RBLE_GATT_Set_Permission
+                                  00003d04        4b   func ,g         0
+  _RBLE_GATT_Set_Data
+                                  00003d4f        4c   func ,g         1
+FILE=.\C Source Files\rBLE\host\sm\rble_api_sm.obj
+                                  00003d9b  00003f8f       1f5
+  _RBLE_SM_Set_Key
+                                  00003d9b        35   func ,g         0
+  _RBLE_SM_Start_Enc
+                                  00003dd0        56   func ,g         0
+  _RBLE_SM_Tk_Req_Resp
+                                  00003e26        37   func ,g         1
+  _RBLE_SM_Ltk_Req_Resp
+                                  00003e5d        5d   func ,g         1
+  _RBLE_SM_Irk_Req_Resp
+                                  00003eba        50   func ,g         1
+  _RBLE_SM_Csrk_Req_Resp
+                                  00003f0a        42   func ,g         0
+  _RBLE_SM_Chk_Bd_Addr_Req_Resp
+                                  00003f4c        44   func ,g         1
+FILE=.\C Source Files\rBLE\host\vs\rble_api_vs.obj
+                                  00003f90  0000430d       37e
+  _RBLE_VS_Enable
+                                  00003f90        3f   func ,g         0
+  _RBLE_VS_Test_Rx_Start
+                                  00003fcf        24   func ,g         0
+  _RBLE_VS_Test_Tx_Start
+                                  00003ff3        2d   func ,g         0
+  _RBLE_VS_Test_End
+                                  00004020        1b   func ,g         0
+  _RBLE_VS_Set_Test_Parameter
+                                  0000403b        3e   func ,g         0
+  _RBLE_VS_Read_Test_RSSI
+                                  00004079        1b   func ,g         0
+  _RBLE_VS_Write_Bd_Address
+                                  00004094        34   func ,g         0
+  _RBLE_VS_Set_Tx_Power
+                                  000040c8        35   func ,g         0
+  _RBLE_VS_GPIO_Dir
+                                  000040fd        24   func ,g         0
+  _RBLE_VS_GPIO_Access
+                                  00004121        26   func ,g         0
+  _RBLE_VS_Flash_Management
+                                  00004147        24   func ,g         0
+  _RBLE_VS_Flash_Access
+                                  0000416b        b2   func ,g         0
+  _RBLE_VS_Flash_Operation
+                                  0000421d        24   func ,g         0
+  _RBLE_VS_Flash_Get_Space
+                                  00004241        1b   func ,g         0
+  _RBLE_VS_Flash_Get_EEL_Ver
+                                  0000425c        1b   func ,g         0
+  _RBLE_VS_Adapt_Enable
+                                  00004277        24   func ,g         0
+  _RBLE_VS_RF_Control
+                                  0000429b        24   func ,g         0
+  _RBLE_VS_Set_Params
+                                  000042bf        4f   func ,g         0
+FILE=.\C Source Files\rBLE\host\rble_host.obj
+                                  0000430e  00004611       304
+  _RBLE_Init
+                                  0000430e        c7   func ,g         1
+  _rBLE_Exit
+                                  000043d5         4   func ,g         0
+  _rBLE_Run
+                                  000043d9        6e   func ,g         1
+  _rBLE_Is_Idle
+                                  00004447        25   func ,g         1
+  _rBLE_Profile_Init
+                                  0000446c         b   func ,g         1
+  _RBLE_Host_active_call_back@1
+                                  00004477         f   func ,l         2
+  _RBLE_Host_read_call_back@1
+                                  00004486        26   func ,l         2
+  _RBLE_Host_reset_call_back@1
+                                  000044ac        11   func ,l         2
+  _RBLE_Host_write_call_back@1
+                                  000044bd         4   func ,l         2
+  _RBLE_Host_error_call_back@1
+                                  000044c1        11   func ,l         2
+  _RBLE_Get_CMD_Buffer
+                                  000044d2        14   func ,g        42
+  _ke_evt_set
+                                  000044e6        20   func ,g         4
+  _ke_evt_clear
+                                  00004506         1   func ,g         2
+  _RBLE_Data_Set_Start
+                                  00004507        4a   func ,g         1
+  _RBLE_Data_Set
+                                  00004551        a8   func ,g         5
+  _RBLE_Data_Set_End
+                                  000045f9        11   func ,g         1
+  _RBLE_Is_Cmd_Buff_Available
+                                  0000460a         8   func ,g         0
+FILE=.\C Source Files\rBLE\host\rble_if_api_cb.obj
+                                  00004612  00005323       d12
+  _RBLE_Event_Data_Analisys
+                                  00004612       d12   func ,g         1
+FILE=.\C Source Files\rBLE\rscip\rscip.obj
+                                  00005324  00005454       131
+  _RSCIP_Initialize
+                                  00005324        85   func ,g         1
+  _RSCIP_Write
+                                  000053a9        ac   func ,g         1
+FILE=.\C Source Files\rBLE\rscip\rscip_cntl.obj
+                                  00005455  00006074       c20
+  _RSCIP_Tx_Done
+                                  00005455       224   func ,g         1
+  _RSCIP_Rx_Done
+                                  00005679       6bb   func ,g         1
+  _Uart_Next_Data_Check@1
+                                  00005d34        2a   func ,l         1
+  _RSCIP_Packet_Ctr_Init
+                                  00005d5e        4f   func ,g         4
+  _RSCIP_Time_Up
+                                  00005dad        d7   func ,g         6
+  _RSCIP_Packet_Tx
+                                  00005e84       1ac   func ,g        15
+  _RSCIP_Timer_Init
+                                  00006030         a   func ,g         1
+  _calc_checksum@1
+                                  0000603a        3b   func ,l         2
+FILE=.\C Source Files\rBLE\rscip\rscip_uart.obj
+                                  00006075  0000647a       406
+  _RSCIP_Uart_Init
+                                  00006075        41   func ,g         1
+  _RSCIP_Uart_Write
+                                  000060b6       123   func ,g         2
+  _RSCIP_Uart_Read_Start
+                                  000061d9         f   func ,g         3
+  _RSCIP_Uart_Tx_Done
+                                  000061e8         c   func ,g         1
+  _RSCIP_Uart_Rx_Done
+                                  000061f4       243   func ,g         1
+  _RSCIP_Uart_Rx_Error
+                                  00006437         3   func ,g         1
+  _RSCIP_Uart_Rx_FirstByte
+                                  0000643a        11   func ,g         0
+  _RSCIP_Uart_Rx_Complete
+                                  0000644b        16   func ,g         0
+  _RSCIP_Can_Sleep
+                                  00006461        1a   func ,g         1
+FILE=.\C Source Files\rBLE\sample_profile\scp\scps.obj
+                                  0000647b  0000688b       411
+  _RBLE_SCP_Server_Enable
+                                  0000647b        7d   func ,g         1
+  _RBLE_SCP_Server_Disable
+                                  000064f8        30   func ,g         0
+  _RBLE_SCP_Server_Send_Notify
+                                  00006528        2a   func ,g         1
+  _RBLE_SCP_Server_Send_Indicate
+                                  00006552        2a   func ,g         0
+  _scps_send_enable_complete@1
+                                  0000657c        23   func ,l         1
+  _scps_send_chg_IndNtf@1
+                                  0000659f        40   func ,l         2
+  _scps_send_chg_char@1
+                                  000065df        2e   func ,l         1
+  _scps_set_data@1
+                                  0000660d        36   func ,l         5
+  _scps_send_response@1
+                                  00006643        1c   func ,l         1
+  _gatt_callback@1
+                                  0000665f       22d   func ,l         2
+FILE=.\C Source Files\rBLE\sample_app\app.obj
+                                  0000688c  00006dad       522
+  _APP_Init
+                                  0000688c        4e   func ,g         1
+  _APP_Run
+                                  000068da       28f   func ,g         1
+  _APP_Is_Idle
+                                  00006b69         b   func ,g         1
+  _APP_RBLE_CallBack@1
+                                  00006b74         d   func ,l         2
+  _APP_GAP_CallBack@1
+                                  00006b81        bd   func ,l         2
+  _APP_SM_CallBack@1
+                                  00006c3e        c7   func ,l         2
+  _APP_SCPS_CallBack@1
+                                  00006d05        67   func ,l         2
+  _APP_Send_Data
+                                  00006d6c        16   func ,g         4
+  _APP_Disconnect
+                                  00006d82         5   func ,g         0
+  _APP_Set_RunCmd@1
+                                  00006d87        27   func ,l         d
+FILE=.\C Source Files\Platform\driver\serial\uart.obj
+                                  00006dae  00006dd4        27
+  _serial_init
+                                  00006dae         2   func ,g         1
+  _serial_exit
+                                  00006db0         1   func ,g         1
+  _serial_read
+                                  00006db1         c   func ,g         5
+  _serial_write
+                                  00006dbd         c   func ,g         1
+  _uart_sr_isr
+                                  00006dc9         4   func ,g         1
+  _uart_st_isr
+                                  00006dcd         4   func ,g         1
+  _uart_sre_isr
+                                  00006dd1         4   func ,g         2
+FILE=.\C Source Files\Platform\driver\timer\timer.obj
+                                  00006dd5  00006ef1       11d
+  _RBLE_Init_Timer
+                                  00006dd5         e   func ,g         1
+  _RBLE_Set_Timer
+                                  00006de3         8   func ,g         3
+  _RBLE_Clear_Timer
+                                  00006deb         4   func ,g         8
+  _RBLE_Set_Timer_Id
+                                  00006def         a   func ,g         2
+  _RBLE_Clear_Timer_Id
+                                  00006df9         3   func ,g         2
+  _rBLE_Is_Timeup_Call_Func
+                                  00006dfc        41   func ,g         1
+  _RBLE_Terminate_Timer
+                                  00006e3d        20   func ,g         0
+  _rBLE_Timer_Can_Sleep
+                                  00006e5d        1b   func ,g         1
+  _Set_Timer@1
+                                  00006e78        3b   func ,l         2
+  _Clear_Timer@1
+                                  00006eb3        10   func ,l         3
+  _timer_isr
+                                  00006ec3        2f   func ,g         1
+FILE=.\src\r_cg_cgc.obj
+                                  00006ef2  00006f05        14
+  _R_CGC_Create
+                                  00006ef2        14   func ,g         1
+FILE=.\src\r_cg_cgc_user.obj
+                                  00006f06  00006f08         3
+  _R_CGC_Get_ResetSource
+                                  00006f06         3   func ,g         1
+FILE=.\src\r_cg_it.obj
+                                  00006f09  00006f3b        33
+  _R_IT_Create
+                                  00006f09        19   func ,g         1
+  _R_IT_Start
+                                  00006f22         d   func ,g         1
+  _R_IT_Stop
+                                  00006f2f         d   func ,g         1
+FILE=.\src\r_cg_port.obj
+                                  00006f3c  00006f57        1c
+  _R_PORT_Create
+                                  00006f3c        1c   func ,g         1
+FILE=.\stkinit.obj
+                                  00006f58  00006f9b        44
+  _stkinit
+                                  00006f58         0   none ,g         0
+  LSTINIT1
+                                  00006f66         0   none ,l         1
+  LSTINIT2
+                                  00006f90         0   none ,l         2
+  LSTINIT3
+                                  00006f9b         0   none ,l         2
+FILE=.\src\r_cg_lcd.obj
+                                  00006f9c  0000705e        c3
+  _R_LCD_Create
+                                  00006f9c        7a   func ,g         1
+  _R_LCD_Start
+                                  00007016         4   func ,g         3
+  _R_LCD_Stop
+                                  0000701a         4   func ,g         2
+  _R_LCD_Voltage_On
+                                  0000701e        33   func ,g         2
+  _R_LCD_Voltage_Off
+                                  00007051         e   func ,g         0
+FILE=.\src\r_cg_12adc.obj
+                                  0000705f  00007124        c6
+  _R_12ADC_Create
+                                  0000705f        3b   func ,g         1
+  _R_12ADC_Start
+                                  0000709a         e   func ,g         1
+  _R_12ADC_Stop
+                                  000070a8         e   func ,g         0
+  _R_12ADC_Get_ValueResult
+                                  000070b6        6f   func ,g         1
+FILE=.\src\r_cg_iica.obj
+                                  00007125  000071ff        db
+  _R_IICA0_Create
+                                  00007125        53   func ,g         0
+  _R_IICA0_Stop
+                                  00007178         5   func ,g         0
+  _R_IICA0_StopCondition
+                                  0000717d         5   func ,g         0
+  _R_IICA0_Master_Send
+                                  00007182        3d   func ,g         0
+  _R_IICA0_Master_Receive
+                                  000071bf        41   func ,g         0
+FILE=.\src\r_cg_iica_user.obj
+                                  00007200  00007293        94
+  _iica0_masterhandler@1
+                                  00007200        8f   func ,l         1
+  _r_iica0_callback_master_sendend@1
+                                  0000728f         5   func ,l         2
+FILE=.\src\r_cg_intp.obj
+                                  00007294  000072db        48
+  _R_INTC_Create
+                                  00007294        3a   func ,g         1
+  _R_INTC0_Start
+                                  000072ce         7   func ,g         1
+  _R_INTC0_Stop
+                                  000072d5         7   func ,g         0
+FILE=.\src\r_cg_main.obj
+                                  000072dc  000079e5       70a
+  _main
+                                  000072dc        ee   func ,g         1
+  _DataAbs
+                                  000073ca         a   func ,g         3
+  _CalculatePressure
+                                  000073d4       1f0   func ,g         1
+  _SPNoiseFilter
+                                  000075c4        24   func ,g         1
+  _DPNoiseFilter
+                                  000075e8        1e   func ,g         1
+  _QueuePulseData
+                                  00007606        50   func ,g         1
+  _CalculatePulse
+                                  00007656        c4   func ,g         1
+  _LCDView
+                                  0000771a        38   func ,g         2
+  _LCDErrorInfo
+                                  00007752        3e   func ,g         1
+  _RefreshLCD
+                                  00007790        9b   func ,g         3
+  _Delayus
+                                  0000782b         b   func ,g        1b
+  _Delayms
+                                  00007836        35   func ,g         0
+  _I2C_Init
+                                  0000786b        14   func ,g         1
+  _I2C_Start
+                                  0000787f        2a   func ,g         1
+  _I2C_Stop
+                                  000078a9        2a   func ,g         2
+  _I2C_WriteByte
+                                  000078d3        5b   func ,g         1
+  _I2C_ReadByte
+                                  0000792e        6c   func ,g         2
+  _Press_Read
+                                  0000799a        4c   func ,g         1
+FILE=.\src\r_cg_sau.obj
+                                  000079e6  00007b35       150
+  _R_SAU0_Create
+                                  000079e6        10   func ,g         1
+  _R_UART0_Create
+                                  000079f6        77   func ,g         1
+  _R_UART0_Start
+                                  00007a6d        26   func ,g         1
+  _R_UART0_Stop
+                                  00007a93        1e   func ,g         0
+  _R_UART0_Receive
+                                  00007ab1        18   func ,g         1
+  _R_UART0_Send
+                                  00007ac9        25   func ,g         1
+  _R_UART0_Snooze
+                                  00007aee        24   func ,g         1
+  _R_UART2_Snooze
+                                  00007b12        24   func ,g         0
+FILE=.\src\r_cg_sau_user.obj
+                                  00007b36  00007b45        10
+  _r_uart0_callback_receiveend@1
+                                  00007b36         4   func ,l         1
+  _r_uart0_callback_softwareoverrun@1
+                                  00007b3a         4   func ,l         1
+  _r_uart0_callback_sendend@1
+                                  00007b3e         4   func ,l         1
+  _r_uart0_callback_error@1
+                                  00007b42         4   func ,l         1
+FILE=.\src\r_cg_systeminit.obj
+                                  00007b46  00007b75        30
+  _R_Systeminit
+                                  00007b46        2b   func ,g         1
+  _hdwinit
+                                  00007b71         5   func ,g         1
+FILE=.\src\r_cg_tau.obj
+                                  00007b76  00007c95       120
+  _R_TAU0_Create
+                                  00007b76        d0   func ,g         1
+  _R_TAU0_Channel0_Start
+                                  00007c46        10   func ,g         0
+  _R_TAU0_Channel0_Stop
+                                  00007c56        10   func ,g         1
+  _R_TAU0_Channel6_Start
+                                  00007c66        18   func ,g         2
+  _R_TAU0_Channel6_Stop
+                                  00007c7e        18   func ,g         3
+
+SECTION=.monitor2
+FILE=rlink_generates_03
+                                  00017e00  00017fff       200
+
+SECTION=.bss
+FILE=.\C Source Files\rBLE\host\rble_host.obj
+                                  000fe900  000ff137       838
+  _rble_init_cb
+                                  000fe900         4   data ,g         8
+  _rble_mode
+                                  000fe904         1   data ,g        46
+  _RBLE_OVER_PACKET_info
+                                  000fe906         8   data ,g        1f
+    struct RBLE_OVER_PACKET_INFO_t {
+                                                   8
+      _RBLE_OVER_PACKET_info.w_subhead_pnt
+                                  000fe906         4   [near pointer]
+      _RBLE_OVER_PACKET_info.w_data_pnt
+                                  000fe908         4   [near pointer]
+      _RBLE_OVER_PACKET_info.r_head_pnt
+                                  000fe90a         4   [near pointer]
+      _RBLE_OVER_PACKET_info.r_data_cnt
+                                  000fe90c         2   unsigned int
+    }
+  _evt_buff_rd_cnt
+                                  000fe90e         2   data ,g         4
+  _evt_buff_wr_cnt
+                                  000fe910         2   data ,g         5
+  _cmd_buff_rd_cnt
+                                  000fe912         2   data ,g         4
+  _cmd_buff_wr_cnt
+                                  000fe914         2   data ,g         5
+  _cmd_buf
+                                  000fe916       400   data ,g         3
+  _evt_buf
+                                  000fed16       400   data ,g         3
+  _Tx_Event_Wr_Cnt
+                                  000ff116         2   data ,g         3
+  _Tx_Event_Rd_Cnt
+                                  000ff118         2   data ,g         3
+  _Rx_Event_Wr_Cnt
+                                  000ff11a         2   data ,g         3
+  _Rx_Event_Rd_Cnt
+                                  000ff11c         2   data ,g         3
+  _cmd_buff_used_count
+                                  000ff11e         1   data ,g         4
+  _RBLE_GAP_Info
+                                  000ff120         8   data ,g         7
+    struct RBLE_GAP_INFO_t {
+                                                   8
+      _RBLE_GAP_Info.conhdl
+                                  000ff120         2   unsigned int
+      _RBLE_GAP_Info.Handler
+                                  000ff122         4   [far pointer]
+      _RBLE_GAP_Info.Temp_Malloc_p
+                                  000ff126         4   [near pointer]
+    }
+  _RBLE_SM_Info
+                                  000ff128         6   data ,g         7
+    struct RBLE_SM_INFO_t {
+                                                   6
+      _RBLE_SM_Info.conhdl
+                                  000ff128         2   unsigned int
+      _RBLE_SM_Info.Handler
+                                  000ff12a         4   [far pointer]
+    }
+  _RBLE_GATT_Info
+                                  000ff12e         4   data ,g         7
+    struct RBLE_GATT_INFO_t {
+                                                   4
+      _RBLE_GATT_Info.Handler
+                                  000ff12e         4   [far pointer]
+    }
+  _RBLE_VS_Info
+                                  000ff132         6   data ,g         8
+    struct RBLE_VS_INFO_t {
+                                                   6
+      _RBLE_VS_Info.conhdl
+                                  000ff132         2   unsigned int
+      _RBLE_VS_Info.Handler
+                                  000ff134         4   [far pointer]
+    }
+FILE=.\C Source Files\rBLE\host\rble_if_api_cb.obj
+                                  000ff138  000ff38d       256
+  _rBLE_Over_Packet_Temp@1
+                                  000ff138       256   data ,l         4
+FILE=.\C Source Files\rBLE\rscip\rscip_cntl.obj
+                                  000ff38e  000ff448        bb
+  _rscip
+                                  000ff38e         5   data ,g        6e
+    struct  {
+                                                   5
+      _rscip.state
+                                  000ff38e         1   enum
+      _rscip.error_state
+                                  000ff38f         1   enum
+      _rscip.tx_end_state
+                                  000ff390         1   enum
+      _rscip.config
+                                  000ff391         1   unsigned char
+      _rscip.req_message
+                                  000ff392         1   unsigned char
+    }
+  _callback_func
+                                  000ff394        14   data ,g        26
+    struct  {
+                                                  14
+      _callback_func.active_callback
+                                  000ff394         4   [far pointer]
+      _callback_func.read_callback
+                                  000ff398         4   [far pointer]
+      _callback_func.write_callback
+                                  000ff39c         4   [far pointer]
+      _callback_func.reset_callback
+                                  000ff3a0         4   [far pointer]
+      _callback_func.error_callback
+                                  000ff3a4         4   [far pointer]
+    }
+  _write_packet
+                                  000ff3a8        10   data ,g         f
+    struct  {
+                                                   8
+      _write_packet.type
+                                  000ff3a8         1   enum
+      _write_packet.size
+                                  000ff3aa         2   unsigned int
+      _write_packet.bufp
+                                  000ff3ac         4   [near pointer]
+      _write_packet.seq_num
+                                  000ff3ae         1   unsigned char
+    }
+  _tx_packet_ctr
+                                  000ff3b8         5   data ,g        24
+    struct  {
+                                                   5
+      _tx_packet_ctr.rp
+                                  000ff3b8         1   unsigned char
+      _tx_packet_ctr.wp
+                                  000ff3b9         1   unsigned char
+      _tx_packet_ctr.ap
+                                  000ff3ba         1   unsigned char
+      _tx_packet_ctr.rsize
+                                  000ff3bb         1   unsigned char
+      _tx_packet_ctr.wsize
+                                  000ff3bc         1   unsigned char
+    }
+  _tx
+                                  000ff3bd         2   data ,g         b
+    struct  {
+                                                   2
+      _tx.seq_num
+                                  000ff3bd         1   unsigned char
+      _tx.ack_num
+                                  000ff3be         1   unsigned char
+    }
+  _rx
+                                  000ff3bf         2   data ,g         5
+    struct  {
+                                                   2
+      _rx.seq_num
+                                  000ff3bf         1   unsigned char
+      _rx.ack_num
+                                  000ff3c0         1   unsigned char
+    }
+  _ack_ctr
+                                  000ff3c1         3   data ,g        15
+    struct  {
+                                                   3
+      _ack_ctr.buf
+                                  000ff3c1         2   unsigned char
+      _ack_ctr.count
+                                  000ff3c3         1   unsigned char
+    }
+  _tx_done
+                                  000ff3c4         2   data ,g         8
+    struct  {
+                                                   2
+      _tx_done.app
+                                  000ff3c4         1   unsigned char
+      _tx_done.uart
+                                  000ff3c5         1   unsigned char
+    }
+  _read_packet_buf
+                                  000ff3c6        80   data ,g         4
+  _retry_count
+                                  000ff446         3   data ,g         e
+    struct  {
+                                                   3
+      _retry_count.sync_res
+                                  000ff446         1   unsigned char
+      _retry_count.config_res
+                                  000ff447         1   unsigned char
+      _retry_count.ack
+                                  000ff448         1   unsigned char
+    }
+FILE=.\C Source Files\rBLE\rscip\rscip_uart.obj
+                                  000ff44a  000ff882       439
+  _uart
+                                  000ff44a       31e   data ,g         b
+    struct  {
+                                                 10a
+      _uart.rx_header_buf
+                                  000ff44a         4   unsigned char
+      _uart.rx_buf
+                                  000ff44e       102   unsigned char
+      _uart.rx_length
+                                  000ff550         2   unsigned int
+      _uart.rx_flag
+                                  000ff552         1   unsigned char
+    }
+  _uart_rp
+                                  000ff768         2   data ,g         2
+  _uart_wp
+                                  000ff76a         2   data ,g         9
+  _uart_ctr
+                                  000ff76c         2   data ,g         9
+    struct  {
+                                                   2
+      _uart_ctr.rp
+                                  000ff76c         1   unsigned char
+      _uart_ctr.wp
+                                  000ff76d         1   unsigned char
+    }
+  _uart_rx_buf
+                                  000ff76e         1   data ,g        16
+  _uart_tx_buf
+                                  000ff76f       10c   data ,g         f
+  _rscip_tx_state@1
+                                  000ff87b         1   data ,l         5
+  _rscip_rx_state@2
+                                  000ff87c         1   data ,l         e
+  _esc_flag@3
+                                  000ff87d         1   data ,l         d
+  _check_sum@4
+                                  000ff87e         1   data ,l         7
+  _packet_length@5
+                                  000ff880         2   data ,l         8
+  _last_rscip_rx_state@6
+                                  000ff882         1   data ,l         4
+FILE=.\C Source Files\rBLE\sample_app\app.obj
+                                  000ff884  000ff961        de
+  _BondedAddr@2
+                                  000ff884         6   data ,l         6
+    struct RBLE_BD_ADDR_t {
+                                                   6
+      _BondedAddr@2.addr
+                                  000ff884         6   unsigned char
+    }
+  _SecStatus@3
+                                  000ff88a         1   data ,l         5
+  _LocalKey@4
+                                  000ff88c        56   data ,l         d
+    struct  {
+                                                  56
+      _LocalKey@4.Key_Set_Flags
+                                  000ff88c         1   unsigned char
+      _LocalKey@4.EncKey
+                                  000ff88e        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _LocalKey@4.EncKey.idx
+                                  000ff88e         1   unsigned char
+      _LocalKey@4.EncKey.key_code
+                                  000ff88f         1   unsigned char
+      _LocalKey@4.EncKey.ediv
+                                  000ff890         2   unsigned short
+      _LocalKey@4.EncKey.nb
+                                  000ff892         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _LocalKey@4.EncKey.nb.nb
+                                  000ff892         8   unsigned char
+    }
+      _LocalKey@4.EncKey.ltk
+                                  000ff89a        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _LocalKey@4.EncKey.ltk.key
+                                  000ff89a        10   unsigned char
+    }
+    }
+      _LocalKey@4.IrKey
+                                  000ff8aa        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _LocalKey@4.IrKey.idx
+                                  000ff8aa         1   unsigned char
+      _LocalKey@4.IrKey.key_code
+                                  000ff8ab         1   unsigned char
+      _LocalKey@4.IrKey.ediv
+                                  000ff8ac         2   unsigned short
+      _LocalKey@4.IrKey.nb
+                                  000ff8ae         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _LocalKey@4.IrKey.nb.nb
+                                  000ff8ae         8   unsigned char
+    }
+      _LocalKey@4.IrKey.ltk
+                                  000ff8b6        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _LocalKey@4.IrKey.ltk.key
+                                  000ff8b6        10   unsigned char
+    }
+    }
+      _LocalKey@4.SignKey
+                                  000ff8c6        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _LocalKey@4.SignKey.idx
+                                  000ff8c6         1   unsigned char
+      _LocalKey@4.SignKey.key_code
+                                  000ff8c7         1   unsigned char
+      _LocalKey@4.SignKey.ediv
+                                  000ff8c8         2   unsigned short
+      _LocalKey@4.SignKey.nb
+                                  000ff8ca         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _LocalKey@4.SignKey.nb.nb
+                                  000ff8ca         8   unsigned char
+    }
+      _LocalKey@4.SignKey.ltk
+                                  000ff8d2        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _LocalKey@4.SignKey.ltk.key
+                                  000ff8d2        10   unsigned char
+    }
+    }
+    }
+  _RemoteKey@5
+                                  000ff8e2        56   data ,l         a
+    struct  {
+                                                  56
+      _RemoteKey@5.Key_Set_Flags
+                                  000ff8e2         1   unsigned char
+      _RemoteKey@5.EncKey
+                                  000ff8e4        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _RemoteKey@5.EncKey.idx
+                                  000ff8e4         1   unsigned char
+      _RemoteKey@5.EncKey.key_code
+                                  000ff8e5         1   unsigned char
+      _RemoteKey@5.EncKey.ediv
+                                  000ff8e6         2   unsigned short
+      _RemoteKey@5.EncKey.nb
+                                  000ff8e8         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _RemoteKey@5.EncKey.nb.nb
+                                  000ff8e8         8   unsigned char
+    }
+      _RemoteKey@5.EncKey.ltk
+                                  000ff8f0        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _RemoteKey@5.EncKey.ltk.key
+                                  000ff8f0        10   unsigned char
+    }
+    }
+      _RemoteKey@5.IrKey
+                                  000ff900        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _RemoteKey@5.IrKey.idx
+                                  000ff900         1   unsigned char
+      _RemoteKey@5.IrKey.key_code
+                                  000ff901         1   unsigned char
+      _RemoteKey@5.IrKey.ediv
+                                  000ff902         2   unsigned short
+      _RemoteKey@5.IrKey.nb
+                                  000ff904         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _RemoteKey@5.IrKey.nb.nb
+                                  000ff904         8   unsigned char
+    }
+      _RemoteKey@5.IrKey.ltk
+                                  000ff90c        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _RemoteKey@5.IrKey.ltk.key
+                                  000ff90c        10   unsigned char
+    }
+    }
+      _RemoteKey@5.SignKey
+                                  000ff91c        1c
+    struct RBLE_EVT_SM_Key_t {
+                                                  1c
+      _RemoteKey@5.SignKey.idx
+                                  000ff91c         1   unsigned char
+      _RemoteKey@5.SignKey.key_code
+                                  000ff91d         1   unsigned char
+      _RemoteKey@5.SignKey.ediv
+                                  000ff91e         2   unsigned short
+      _RemoteKey@5.SignKey.nb
+                                  000ff920         8
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _RemoteKey@5.SignKey.nb.nb
+                                  000ff920         8   unsigned char
+    }
+      _RemoteKey@5.SignKey.ltk
+                                  000ff928        10
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _RemoteKey@5.SignKey.ltk.key
+                                  000ff928        10   unsigned char
+    }
+    }
+    }
+  _RcvEdiv@6
+                                  000ff938         2   data ,l         3
+  _RcvNb@7
+                                  000ff93a         8   data ,l         3
+    struct RBLE_RAND_NB_t {
+                                                   8
+      _RcvNb@7.nb
+                                  000ff93a         8   unsigned char
+    }
+  _ConnectionIdx@8
+                                  000ff942         1   data ,l         9
+  _ConnectionType@9
+                                  000ff943         1   data ,l         1
+  _RemoteDevice@10
+                                  000ff944         6   data ,l         2
+    struct RBLE_BD_ADDR_t {
+                                                   6
+      _RemoteDevice@10.addr
+                                  000ff944         6   unsigned char
+    }
+  _FoundFlg@11
+                                  000ff94a         1   data ,l         3
+  _CheckedIrkFlg@12
+                                  000ff94b         1   data ,l         3
+  _RunCmd@13
+                                  000ff94c        14   data ,l         2
+  _WrPtr@14
+                                  000ff960         1   data ,l         6
+  _RdPtr@15
+                                  000ff961         1   data ,l         5
+FILE=.\C Source Files\Platform\driver\timer\timer.obj
+                                  000ff962  000ff97a        19
+  _rBLE_Timer_Mem
+                                  000ff962        18   data ,g         5
+    struct  {
+                                                   8
+      _rBLE_Timer_Mem.Timer_Cnt
+                                  000ff962         2   unsigned short
+      _rBLE_Timer_Mem.Timer_Flg
+                                  000ff964         1   unsigned char
+      _rBLE_Timer_Mem.Timer_Func
+                                  000ff966         4   [far pointer]
+    }
+  _rBLE_Timer_Init
+                                  000ff97a         1   data ,g         5
+FILE=.\src\r_cg_it_user.obj
+                                  000ff97c  000ff983         8
+  _g_SampleCounter
+                                  000ff97c         1   data ,g         3
+  _g_SleeveNormalCounter
+                                  000ff97e         2   data ,g         3
+  _g_DisplayShuffle@1
+                                  000ff980         2   data ,l         6
+  _g_DisplayCloseCounter@2
+                                  000ff982         2   data ,l         3
+FILE=.\src\r_cg_iica.obj
+                                  000ff984  000ff98f         c
+  _g_iica0_master_status_flag
+                                  000ff984         1   data ,g         4
+  _g_iica0_slave_status_flag
+                                  000ff985         1   data ,g         0
+  _gp_iica0_rx_address
+                                  000ff986         2   data ,g         3
+  _g_iica0_rx_len
+                                  000ff988         2   data ,g         3
+  _g_iica0_rx_cnt
+                                  000ff98a         2   data ,g         4
+  _gp_iica0_tx_address
+                                  000ff98c         2   data ,g         3
+  _g_iica0_tx_cnt
+                                  000ff98e         2   data ,g         6
+FILE=.\src\r_cg_main.obj
+                                  000ff990  000ffb05       176
+  _data_received
+                                  000ff990         2   data ,g         5
+  _g_MeasureFlag
+                                  000ff992         1   data ,g         5
+  _g_DataBuffer
+                                  000ff993         2   data ,g         5
+  _g_SampleData
+                                  000ff996       100   data ,g         4
+  _g_Index
+                                  000ffa96         2   data ,g         5
+  _g_TempIndex
+                                  000ffa98         1   data ,g         9
+  _g_TempData
+                                  000ffa9a        22   data ,g         a
+  _g_DiffValue
+                                  000ffabc        40   data ,g        11
+  _g_SampleDataIndex
+                                  000ffafc         1   data ,g         3
+  _g_PulseData
+                                  000ffafd         1   data ,g         4
+  _g_HighPressureData
+                                  000ffafe         1   data ,g         5
+  _g_LowPressureData
+                                  000ffaff         1   data ,g         5
+  _g_BatteryLevel
+                                  000ffb00         1   data ,g         5
+  _g_I2CError
+                                  000ffb01         1   data ,g         1
+  _g_DisplayData
+                                  000ffb02         4   data ,g         9
+FILE=.\src\r_cg_sau.obj
+                                  000ffb06  000ffb0f         a
+  _gp_uart0_tx_address
+                                  000ffb06         2   data ,g         4
+  _g_uart0_tx_count
+                                  000ffb08         2   data ,g         4
+  _gp_uart0_rx_address
+                                  000ffb0a         2   data ,g         3
+  _g_uart0_rx_count
+                                  000ffb0c         2   data ,g         4
+  _g_uart0_rx_length
+                                  000ffb0e         2   data ,g         3
+
+SECTION=.dataR
+FILE=.\C Source Files\rBLE\host\vs\rble_api_vs.obj
+                                  000ffb10  000ffb11         2
+  _access_buf
+                                  000ffb10         2   data ,g         3
+FILE=.\C Source Files\rBLE\sample_profile\scp\scps.obj
+                                  000ffb12  000ffb91        80
+  _scps_info
+                                  000ffb12        80   data ,g        37
+    struct SCPS_INFO_t {
+                                                  80
+      _scps_info.status
+                                  000ffb12         1   enum SCPS_STATUS_enum
+      _scps_info.callback
+                                  000ffb14         4   [far pointer]
+      _scps_info.conhdl
+                                  000ffb18         2   unsigned int
+      _scps_info.notify_en
+                                  000ffb1a         2   unsigned int
+      _scps_info.ind_en
+                                  000ffb1c         2   unsigned int
+      _scps_info.set_data_hdl
+                                  000ffb1e         6   unsigned int
+      _scps_info.wp
+                                  000ffb24         2   unsigned int
+      _scps_info.rp
+                                  000ffb26         2   unsigned int
+      _scps_info.event_data
+                                  000ffb28        6a
+    struct RBLE_GATT_EVENT_t {
+                                                  6a
+      _scps_info.event_data.type
+                                  000ffb28         1   unsigned char
+      _scps_info.event_data.reserved
+                                  000ffb29         1   unsigned char
+      _scps_info.event_data.param
+                                  000ffb2a        68
+    union  Event_Gatt_Parameter_u {
+                                                  68
+      _scps_info.event_data.param.disc_svc_all_cmp
+                                  000ffb2a        34
+    struct RBLE_GATT_Disc_Svc_All_Comp_t {
+                                                  34
+      _scps_info.event_data.param.disc_svc_all_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_svc_all_cmp.nb_resp
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_svc_all_cmp.list
+                                  000ffb2e        30
+    struct RBLE_GATT_SVC_LIST_t {
+                                                   6
+      _scps_info.event_data.param.disc_svc_all_cmp.list.start_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_cmp.list.end_hdl
+                                  000ffb30         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_cmp.list.attr_hdl
+                                  000ffb32         2   unsigned int
+    }
+    }
+      _scps_info.event_data.param.disc_svc_all_128_cmp
+                                  000ffb2a        18
+    struct RBLE_GATT_Disc_Svc_All_128_Comp_t {
+                                                  18
+      _scps_info.event_data.param.disc_svc_all_128_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_128_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_svc_all_128_cmp.nb_resp
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_svc_all_128_cmp.list
+                                  000ffb2e        14
+    struct RBLE_GATT_SVC_128_LIST_t {
+                                                  14
+      _scps_info.event_data.param.disc_svc_all_128_cmp.list.start_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_128_cmp.list.end_hdl
+                                  000ffb30         2   unsigned int
+      _scps_info.event_data.param.disc_svc_all_128_cmp.list.attr_hdl
+                                  000ffb32        10   unsigned char
+    }
+    }
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp
+                                  000ffb2a        24
+    struct RBLE_GATT_Disc_Svc_By_Uuid_Comp_t {
+                                                  24
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.nb_resp
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.list
+                                  000ffb2e        20
+    struct RBLE_GATT_SVC_RANGE_LIST_t {
+                                                   4
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.list.start_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_svc_by_uuid_cmp.list.end_hdl
+                                  000ffb30         2   unsigned int
+    }
+    }
+      _scps_info.event_data.param.disc_svc_incl_cmp
+                                  000ffb2a        44
+    struct RBLE_GATT_Disc_Svc_Incl_Comp_t {
+                                                  44
+      _scps_info.event_data.param.disc_svc_incl_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.nb_entry
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_svc_incl_cmp.entry_len
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list
+                                  000ffb2e        40
+    union  incl_list_u {
+                                                  40
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.incl
+                                  000ffb2e        16
+    struct RBLE_GATT_INCL_128_LIST_t {
+                                                  16
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.incl.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.incl.start_hdl
+                                  000ffb30         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.incl.end_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.incl.uuid
+                                  000ffb34        10   unsigned char
+    }
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.list
+                                  000ffb2e        40
+    struct RBLE_GATT_INCL_LIST_t {
+                                                   8
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.list.start_hdl
+                                  000ffb30         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.list.end_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_svc_incl_cmp.incl_list.list.uuid
+                                  000ffb34         2   unsigned int
+    }
+    }
+    }
+      _scps_info.event_data.param.disc_char_all_cmp
+                                  000ffb2a        44
+    struct RBLE_GATT_Disc_Char_All_Comp_t {
+                                                  44
+      _scps_info.event_data.param.disc_char_all_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_cmp.nb_entry
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_cmp.list
+                                  000ffb2e        40
+    struct RBLE_GATT_CHAR_LIST_t {
+                                                   8
+      _scps_info.event_data.param.disc_char_all_cmp.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_cmp.list.prop
+                                  000ffb30         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_cmp.list.reserved
+                                  000ffb31         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_cmp.list.pointer_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_cmp.list.uuid
+                                  000ffb34         2   unsigned int
+    }
+    }
+      _scps_info.event_data.param.disc_char_all_128_cmp
+                                  000ffb2a        1a
+    struct RBLE_GATT_Disc_Char_All_128_Comp_t {
+                                                  1a
+      _scps_info.event_data.param.disc_char_all_128_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_128_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_128_cmp.nb_entry
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_128_cmp.list
+                                  000ffb2e        16
+    struct RBLE_GATT_CHAR_128_LIST_t {
+                                                  16
+      _scps_info.event_data.param.disc_char_all_128_cmp.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_128_cmp.list.prop
+                                  000ffb30         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_128_cmp.list.reserved
+                                  000ffb31         1   unsigned char
+      _scps_info.event_data.param.disc_char_all_128_cmp.list.pointer_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_char_all_128_cmp.list.uuid
+                                  000ffb34        10   unsigned char
+    }
+    }
+      _scps_info.event_data.param.disc_char_by_uuid_cmp
+                                  000ffb2a        44
+    struct RBLE_GATT_Disc_Char_By_Uuid_Comp_t {
+                                                  44
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.nb_entry
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list
+                                  000ffb2e        40
+    struct RBLE_GATT_CHAR_LIST_t {
+                                                   8
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list.prop
+                                  000ffb30         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list.reserved
+                                  000ffb31         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list.pointer_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_cmp.list.uuid
+                                  000ffb34         2   unsigned int
+    }
+    }
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp
+                                  000ffb2a        1a
+    struct RBLE_GATT_Disc_Char_By_Uuid_128_Comp_t {
+                                                  1a
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.nb_entry
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list
+                                  000ffb2e        16
+    struct RBLE_GATT_CHAR_128_LIST_t {
+                                                  16
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list.prop
+                                  000ffb30         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list.reserved
+                                  000ffb31         1   unsigned char
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list.pointer_hdl
+                                  000ffb32         2   unsigned int
+      _scps_info.event_data.param.disc_char_by_uuid_128_cmp.list.uuid
+                                  000ffb34        10   unsigned char
+    }
+    }
+      _scps_info.event_data.param.disc_char_desc_cmp
+                                  000ffb2a        24
+    struct RBLE_GATT_Disc_Char_Desc_Comp_t {
+                                                  24
+      _scps_info.event_data.param.disc_char_desc_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_desc_cmp.nb_entry
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_desc_cmp.reserved
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_desc_cmp.list
+                                  000ffb2e        20
+    struct RBLE_GATT_CHAR_DESC_LIST_t {
+                                                   4
+      _scps_info.event_data.param.disc_char_desc_cmp.list.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_desc_cmp.list.desc_hdl
+                                  000ffb30         2   unsigned int
+    }
+    }
+      _scps_info.event_data.param.disc_char_desc_128_cmp
+                                  000ffb2a        16
+    struct RBLE_GATT_Disc_Char_Desc_128_Comp_t {
+                                                  16
+      _scps_info.event_data.param.disc_char_desc_128_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.disc_char_desc_128_cmp.nb_entry
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.disc_char_desc_128_cmp.reserved
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.disc_char_desc_128_cmp.list_128
+                                  000ffb2e        12
+    struct RBLE_GATT_CHAR_DESC_128_LIST_t {
+                                                  12
+      _scps_info.event_data.param.disc_char_desc_128_cmp.list_128.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.disc_char_desc_128_cmp.list_128.uuid
+                                  000ffb30        10   unsigned char
+    }
+    }
+      _scps_info.event_data.param.read_char_resp
+                                  000ffb2a        1e
+    struct RBLE_GATT_Read_Char_Resp_t {
+                                                  1e
+      _scps_info.event_data.param.read_char_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.read_char_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.read_char_resp.data
+                                  000ffb2d        1a
+    struct RBLE_GATT_INFO_DATA_t {
+                                                  1a
+      _scps_info.event_data.param.read_char_resp.data.each_len
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.read_char_resp.data.len
+                                  000ffb2e         1   unsigned char
+      _scps_info.event_data.param.read_char_resp.data.data
+                                  000ffb2f        18   unsigned char
+    }
+    }
+      _scps_info.event_data.param.read_char_long_resp
+                                  000ffb2a        1e
+    struct RBLE_GATT_Read_Char_Long_Resp_t {
+                                                  1e
+      _scps_info.event_data.param.read_char_long_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.read_char_long_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.read_char_long_resp.val_len
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.read_char_long_resp.attr_hdl
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.read_char_long_resp.value
+                                  000ffb30        18   unsigned char
+    }
+      _scps_info.event_data.param.read_char_mult_resp
+                                  000ffb2a        68
+    struct RBLE_GATT_Read_Char_Mult_Resp_t {
+                                                  68
+      _scps_info.event_data.param.read_char_mult_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.read_char_mult_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.read_char_mult_resp.val_len
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.read_char_mult_resp.data
+                                  000ffb2e        64
+    struct RBLE_GATT_QUERY_RESULT_t {
+                                                  19
+      _scps_info.event_data.param.read_char_mult_resp.data.len
+                                  000ffb2e         1   unsigned char
+      _scps_info.event_data.param.read_char_mult_resp.data.value
+                                  000ffb2f        18   unsigned char
+    }
+    }
+      _scps_info.event_data.param.read_char_long_desc_resp
+                                  000ffb2a        1e
+    struct RBLE_GATT_Read_Char_Long_Desc_Resp_t {
+                                                  1e
+      _scps_info.event_data.param.read_char_long_desc_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.read_char_long_desc_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.read_char_long_desc_resp.val_len
+                                  000ffb2d         1   unsigned char
+      _scps_info.event_data.param.read_char_long_desc_resp.value
+                                  000ffb2e        18   unsigned char
+      _scps_info.event_data.param.read_char_long_desc_resp.attr_hdl
+                                  000ffb46         2   unsigned int
+    }
+      _scps_info.event_data.param.write_char_resp
+                                  000ffb2a         4
+    struct RBLE_GATT_Write_Char_Resp_t {
+                                                   4
+      _scps_info.event_data.param.write_char_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.write_char_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.write_char_resp.reserved
+                                  000ffb2d         1   unsigned char
+    }
+      _scps_info.event_data.param.write_reliable_resp
+                                  000ffb2a         4
+    struct RBLE_GATT_Write_Reliable_Resp_t {
+                                                   4
+      _scps_info.event_data.param.write_reliable_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.write_reliable_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.write_reliable_resp.reserved
+                                  000ffb2d         1   unsigned char
+    }
+      _scps_info.event_data.param.cancel_write_resp
+                                  000ffb2a         4
+    struct RBLE_GATT_Cancel_Write_Char_Resp_t {
+                                                   4
+      _scps_info.event_data.param.cancel_write_resp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.cancel_write_resp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.cancel_write_resp.reserved
+                                  000ffb2d         1   unsigned char
+    }
+      _scps_info.event_data.param.handle_value_notif
+                                  000ffb2a        1e
+    struct RBLE_GATT_Handle_Value_Notif_t {
+                                                  1e
+      _scps_info.event_data.param.handle_value_notif.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.handle_value_notif.charhdl
+                                  000ffb2c         2   unsigned int
+      _scps_info.event_data.param.handle_value_notif.size
+                                  000ffb2e         1   unsigned char
+      _scps_info.event_data.param.handle_value_notif.value
+                                  000ffb2f        18   unsigned char
+      _scps_info.event_data.param.handle_value_notif.reserved
+                                  000ffb47         1   unsigned char
+    }
+      _scps_info.event_data.param.handle_value_ind
+                                  000ffb2a        1e
+    struct RBLE_GATT_Handle_Value_Ind_t {
+                                                  1e
+      _scps_info.event_data.param.handle_value_ind.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.handle_value_ind.charhdl
+                                  000ffb2c         2   unsigned int
+      _scps_info.event_data.param.handle_value_ind.size
+                                  000ffb2e         1   unsigned char
+      _scps_info.event_data.param.handle_value_ind.value
+                                  000ffb2f        18   unsigned char
+      _scps_info.event_data.param.handle_value_ind.reserved
+                                  000ffb47         1   unsigned char
+    }
+      _scps_info.event_data.param.handle_value_cfm
+                                  000ffb2a         1
+    struct RBLE_GATT_Handle_Value_Cfm_t {
+                                                   1
+      _scps_info.event_data.param.handle_value_cfm.status
+                                  000ffb2a         1   unsigned char
+    }
+      _scps_info.event_data.param.discovery_cmp
+                                  000ffb2a         4
+    struct RBLE_GATT_Discovery_Comp_t {
+                                                   4
+      _scps_info.event_data.param.discovery_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.discovery_cmp.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.discovery_cmp.reserved
+                                  000ffb2d         1   unsigned char
+    }
+      _scps_info.event_data.param.complete
+                                  000ffb2a         4
+    struct RBLE_GATT_Complete_t {
+                                                   4
+      _scps_info.event_data.param.complete.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.complete.att_code
+                                  000ffb2c         1   unsigned char
+      _scps_info.event_data.param.complete.reserved
+                                  000ffb2d         1   unsigned char
+    }
+      _scps_info.event_data.param.write_cmd_ind
+                                  000ffb2a        20
+    struct RBLE_GATT_Write_Cmd_Ind_t {
+                                                  20
+      _scps_info.event_data.param.write_cmd_ind.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.write_cmd_ind.elmt
+                                  000ffb2c         2   unsigned int
+      _scps_info.event_data.param.write_cmd_ind.size
+                                  000ffb2e         2   unsigned int
+      _scps_info.event_data.param.write_cmd_ind.offset
+                                  000ffb30         1   unsigned char
+      _scps_info.event_data.param.write_cmd_ind.resp
+                                  000ffb31         1   unsigned char
+      _scps_info.event_data.param.write_cmd_ind.value
+                                  000ffb32        18   unsigned char
+    }
+      _scps_info.event_data.param.set_perm_cmp
+                                  000ffb2a         1
+    struct RBLE_GATT_Set_Perm_Complete_t {
+                                                   1
+      _scps_info.event_data.param.set_perm_cmp.status
+                                  000ffb2a         1   unsigned char
+    }
+      _scps_info.event_data.param.set_data_cmp
+                                  000ffb2a         1
+    struct RBLE_GATT_Set_Data_Complete_t {
+                                                   1
+      _scps_info.event_data.param.set_data_cmp.status
+                                  000ffb2a         1   unsigned char
+    }
+      _scps_info.event_data.param.notify_cmp
+                                  000ffb2a         6
+    struct RBLE_GATT_Notify_Comp_t {
+                                                   6
+      _scps_info.event_data.param.notify_cmp.conhdl
+                                  000ffb2a         2   unsigned int
+      _scps_info.event_data.param.notify_cmp.charhdl
+                                  000ffb2c         2   unsigned int
+      _scps_info.event_data.param.notify_cmp.status
+                                  000ffb2e         1   unsigned char
+      _scps_info.event_data.param.notify_cmp.reserved
+                                  000ffb2f         1   unsigned char
+    }
+      _scps_info.event_data.param.cmd_disallowed_ind
+                                  000ffb2a         4
+    struct RBLE_EVT_GATT_Command_Disallowed_Ind_t {
+                                                   4
+      _scps_info.event_data.param.cmd_disallowed_ind.status
+                                  000ffb2a         1   unsigned char
+      _scps_info.event_data.param.cmd_disallowed_ind.reserved
+                                  000ffb2b         1   unsigned char
+      _scps_info.event_data.param.cmd_disallowed_ind.opcode
+                                  000ffb2c         2   unsigned int
+    }
+    }
+    }
+    }
+FILE=.\C Source Files\rBLE\sample_app\app.obj
+                                  000ffb92  000ffc2e        9d
+  _ConnectionHdl@1
+                                  000ffb92         2   data ,l         7
+  _param@16@APP_GAP_Broadcast_Enable_Command@1
+                                  000ffb94        54   data ,l         3
+    struct RBLE_GAP_Broadcast_Enable_t {
+                                                  54
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.disc_mode
+                                  000ffb94         2   unsigned short
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.conn_mode
+                                  000ffb96         2   unsigned short
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info
+                                  000ffb98        50
+    struct RBLE_ADV_INFO_t {
+                                                  50
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param
+                                  000ffb98        10
+    struct RBLE_SET_ADV_PARAM_t {
+                                                  10
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.adv_intv_min
+                                  000ffb98         2   unsigned short
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.adv_intv_max
+                                  000ffb9a         2   unsigned short
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.adv_type
+                                  000ffb9c         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.own_addr_type
+                                  000ffb9d         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.direct_addr_type
+                                  000ffb9e         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.direct_addr
+                                  000ffb9f         6
+    struct RBLE_BD_ADDR_t {
+                                                   6
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.direct_addr.addr
+                                  000ffb9f         6   unsigned char
+    }
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.adv_chnl_map
+                                  000ffba5         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.adv_filt_policy
+                                  000ffba6         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_param.reserved
+                                  000ffba7         1   unsigned char
+    }
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_data
+                                  000ffba8        20
+    struct RBLE_SET_ADV_DATA_t {
+                                                  20
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_data.adv_data_len
+                                  000ffba8         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_data.adv_data
+                                  000ffba9        1f
+    struct RBLE_ADV_DATA_t {
+                                                  1f
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.adv_data.adv_data.data
+                                  000ffba9        1f   unsigned char
+    }
+    }
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.scan_rsp_data
+                                  000ffbc8        20
+    struct RBLE_SET_SCAN_RSP_DATA_t {
+                                                  20
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.scan_rsp_data.scan_rsp_data_len
+                                  000ffbc8         1   unsigned char
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.scan_rsp_data.data
+                                  000ffbc9        1f
+    struct RBLE_SCAN_RSP_DATA_t {
+                                                  1f
+      _param@16@APP_GAP_Broadcast_Enable_Command@1.adv_info.scan_rsp_data.data.data
+                                  000ffbc9        1f   unsigned char
+    }
+    }
+    }
+    }
+  _Param@17@APP_GAP_Bonding_Response_Command@1
+                                  000ffbe8         a   data ,l         2
+    struct RBLE_BOND_RESP_PARAM_t {
+                                                   a
+      _Param@17@APP_GAP_Bonding_Response_Command@1.conhdl
+                                  000ffbe8         2   unsigned short
+      _Param@17@APP_GAP_Bonding_Response_Command@1.accept
+                                  000ffbea         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.io_cap
+                                  000ffbeb         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.oob
+                                  000ffbec         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.auth_req
+                                  000ffbed         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.max_key_size
+                                  000ffbee         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.ikeys
+                                  000ffbef         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.rkeys
+                                  000ffbf0         1   unsigned char
+      _Param@17@APP_GAP_Bonding_Response_Command@1.reserved
+                                  000ffbf1         1   unsigned char
+    }
+  _tk@18@APP_SM_TK_Response_Command@1
+                                  000ffbf2        10   data ,l         2
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _tk@18@APP_SM_TK_Response_Command@1.key
+                                  000ffbf2        10   unsigned char
+    }
+  _irk@19@APP_SM_IRK_Response_Command@1
+                                  000ffc02        10   data ,l         2
+    struct RBLE_KEY_VALUE_t {
+                                                  10
+      _irk@19@APP_SM_IRK_Response_Command@1.key
+                                  000ffc02        10   unsigned char
+    }
+  _param@20@APP_SCPS_Enable_Command@1
+                                  000ffc12         4   data ,l         1
+    struct RBLE_SCP_SERVER_PARAM_t {
+                                                   4
+      _param@20@APP_SCPS_Enable_Command@1.data_ntf_en
+                                  000ffc12         2   unsigned short
+      _param@20@APP_SCPS_Enable_Command@1.data_ind_en
+                                  000ffc14         2   unsigned short
+    }
+  _notify_info@21@APP_SCPS_Send_Notify_Command@1
+                                  000ffc16        19   data ,l         5
+    struct RBLE_SCP_NOTIFY_INFO_t {
+                                                  19
+      _notify_info@21@APP_SCPS_Send_Notify_Command@1.data_len
+                                  000ffc16         1   unsigned char
+      _notify_info@21@APP_SCPS_Send_Notify_Command@1.data
+                                  000ffc17        18   unsigned char
+    }
+FILE=.\src\r_cg_main.obj
+                                  000ffc30  000ffc30         1
+  _g_RunMode
+                                  000ffc30         1   data ,g        12
+FILE=rand
+                                  000ffc32  000ffc35         4
+  _next@1
+                                  000ffc32         4   data ,l         6
+
+Absolute value symbols
+FILE=.\C Source Files\rBLE\host\rble_if_api_cb.obj
+  @$IMM_7E
+                                  0000007e         0   none ,l         2
+FILE=rlink_generates_05
+  __s.textf
+                                  00003198         0   none ,g         0
+  __e.textf
+                                  00007c96         0   none ,g         0
+  __s.data
+                                  000000d8         0   none ,g         0
+  __e.data
+                                  000001fe         0   none ,g         0
+  __s.bss
+                                  000fe900         0   none ,g         0
+  __e.bss
+                                  000ffb10         0   none ,g         0
+  __s.const
+                                  00003000         0   none ,g         0
+  __e.const
+                                  00003198         0   none ,g         0
+  __s.text
+                                  000001fe         0   none ,g         0
+  __e.text
+                                  00000627         0   none ,g         0
+  __s.constf
+                                  00000080         0   none ,g         0
+  __e.constf
+                                  00000080         0   none ,g         0
+  __s.sdata
+                                  00000080         0   none ,g         0
+  __e.sdata
+                                  00000080         0   none ,g         0
+  __s.sbss
+                                  000ffe20         0   none ,g         0
+  __e.sbss
+                                  000ffe20         0   none ,g         0
+  __s.dataR
+                                  000ffb10         0   none ,g         0
+  __e.dataR
+                                  000ffc36         0   none ,g         0
+  __s.sdataR
+                                  000ffe20         0   none ,g         0
+  __e.sdataR
+                                  000ffe20         0   none ,g         0
+  __s.RLIB
+                                  00000627         0   none ,g         0
+  __e.RLIB
+                                  00000a83         0   none ,g         0
+  __s.SLIB
+                                  00000a83         0   none ,g         0
+  __e.SLIB
+                                  00000ad5         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c4         0   none ,g         0
+  __s.monitor1
+                                  000000ce         0   none ,g         0
+  __e.monitor1
+                                  000000d8         0   none ,g         0
+  __s.monitor2
+                                  00017e00         0   none ,g         0
+  __e.monitor2
+                                  00018000         0   none ,g         0
+  __s.security_id
+                                  000000c4         0   none ,g         0
+  __e.security_id
+                                  000000ce         0   none ,g         0
+  __RAM_ADDR_START
+                                  000fe900         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         1
+  __STACK_ADDR_END
+                                  000ffc36         0   none ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       ffff
+04       
+06       
+08       _r_intc0_interrupt@1
+0a       
+0c       
+0e       
+10       
+12       
+14       
+16       
+18       
+1a       
+1c       
+1e       _r_uart0_interrupt_send@1
+20       _r_tau0_channel0_interrupt@1
+22       _r_uart0_interrupt_receive@1
+24       
+26       
+28       
+2a       
+2c       _r_iica0_interrupt@1
+2e       
+30       
+32       
+34       
+36       
+38       _r_12adc_interrupt@1
+3a       
+3c       _r_it_interrupt@1
+3e       
+40       
+42       
+44       
+46       
+48       
+4a       
+4c       
+4e       
+50       
+52       
+54       
+56       _r_tau0_channel7_interrupt@1
+58       
+5a       
+5c       
+5e       
+60       
+62       
+64       
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 rble_api_gap
+     SECTION=.textf
+                 _RBLE_GAP_Reset
+                                 00003198 0011(0000698b:.textf)
+                 _RBLE_GAP_Set_Name
+                                 00003201
+                 _RBLE_GAP_Observation_Enable
+                                 00003232
+                 _RBLE_GAP_Observation_Disable
+                                 0000329b
+                 _RBLE_GAP_Broadcast_Enable
+                                 000032b6 0011(0000699b:.textf)
+                 _RBLE_GAP_Broadcast_Disable
+                                 00003376
+                 _RBLE_GAP_Set_Bonding_Mode
+                                 00003391 0011(000069a5:.textf)
+                 _RBLE_GAP_Set_Security_Request
+                                 000033bb 0011(000069ad:.textf)
+                 _RBLE_GAP_Get_Device_Info
+                                 000033df
+                 _RBLE_GAP_Get_White_List_Size
+                                 000033fa
+                 _RBLE_GAP_Add_To_White_List
+                                 00003415
+                 _RBLE_GAP_Del_From_White_List
+                                 00003446
+                 _RBLE_GAP_Get_Remote_Device_Name
+                                 00003481
+                 _RBLE_GAP_Get_Remote_Device_Info
+                                 00003542
+                 _RBLE_GAP_Device_Search
+                                 0000356c
+                 _RBLE_GAP_Set_Random_Address
+                                 00003592
+                 _RBLE_GAP_Set_Privacy_Feature
+                                 000035bd
+                 _RBLE_GAP_Create_Connection
+                                 000035e3
+                 _RBLE_GAP_Connection_Cancel
+                                 000036a4
+                 _RBLE_GAP_Disconnect
+                                 000036bf 0011(000069cf:.textf)
+                 _RBLE_GAP_Start_Bonding
+                                 000036e9
+                 _RBLE_GAP_Bonding_Info_Ind
+                                 00003736
+                 _RBLE_GAP_Bonding_Response
+                                 0000376b 0011(000069bd:.textf)
+                 _RBLE_GAP_Change_Connection_Param
+                                 000037bc
+                 _RBLE_GAP_Channel_Map_Req
+                                 00003833
+                 _RBLE_GAP_Read_RSSI
+                                 00003876
+                 _RBLE_GAP_Authorized_Ind
+                                 000038a0
+0002 rble_api_gatt
+     SECTION=.textf
+                 _RBLE_GATT_Enable
+                                 000038ca 0010(000064b1:.textf)
+                 _RBLE_GATT_Discovery_Service_Request
+                                 00003913
+                 _RBLE_GATT_Discovery_Char_Request
+                                 00003989
+                 _RBLE_GATT_Discovery_Char_Descriptor_Request
+                                 000039ff
+                 _RBLE_GATT_Read_Char_Request
+                                 00003a4a
+                 _RBLE_GATT_Write_Char_Request
+                                 00003aff
+                 _RBLE_GATT_Write_Reliable_Request
+                                 00003b7d
+                 _RBLE_GATT_Execute_Write_Char_Request
+                                 00003c17
+                 _RBLE_GATT_Notify_Request
+                                 00003c44 0010(00006849:.textf)
+                 _RBLE_GATT_Indicate_Request
+                                 00003c7f 0010(00006881:.textf)
+                 _RBLE_GATT_Write_Response
+                                 00003cba 0010(00006659:.textf)
+                 _RBLE_GATT_Set_Permission
+                                 00003d04
+                 _RBLE_GATT_Set_Data
+                                 00003d4f 0010(0000663d:.textf)
+0003 rble_api_sm
+     SECTION=.textf
+                 _RBLE_SM_Set_Key
+                                 00003d9b
+                 _RBLE_SM_Start_Enc
+                                 00003dd0
+                 _RBLE_SM_Tk_Req_Resp
+                                 00003e26 0011(00006a46:.textf)
+                 _RBLE_SM_Ltk_Req_Resp
+                                 00003e5d 0011(00006ade:.textf)
+                 _RBLE_SM_Irk_Req_Resp
+                                 00003eba 0011(00006b19:.textf)
+                 _RBLE_SM_Csrk_Req_Resp
+                                 00003f0a
+                 _RBLE_SM_Chk_Bd_Addr_Req_Resp
+                                 00003f4c 0011(000069e9:.textf)
+0004 rble_api_vs
+     SECTION=.textf
+                 _RBLE_VS_Enable
+                                 00003f90
+                 _RBLE_VS_Test_Rx_Start
+                                 00003fcf
+                 _RBLE_VS_Test_Tx_Start
+                                 00003ff3
+                 _RBLE_VS_Test_End
+                                 00004020
+                 _RBLE_VS_Set_Test_Parameter
+                                 0000403b
+                 _RBLE_VS_Read_Test_RSSI
+                                 00004079
+                 _RBLE_VS_Write_Bd_Address
+                                 00004094
+                 _RBLE_VS_Set_Tx_Power
+                                 000040c8
+                 _RBLE_VS_GPIO_Dir
+                                 000040fd
+                 _RBLE_VS_GPIO_Access
+                                 00004121
+                 _RBLE_VS_Flash_Management
+                                 00004147
+                 _RBLE_VS_Flash_Access
+                                 0000416b
+                 _RBLE_VS_Flash_Operation
+                                 0000421d
+                 _RBLE_VS_Flash_Get_Space
+                                 00004241
+                 _RBLE_VS_Flash_Get_EEL_Ver
+                                 0000425c
+                 _RBLE_VS_Adapt_Enable
+                                 00004277
+                 _RBLE_VS_RF_Control
+                                 0000429b
+                 _RBLE_VS_Set_Params
+                                 000042bf
+     SECTION=.dataR
+                 _access_buf
+                                 000ffb10 0004(00004217:.textf)
+                                          0006(000052a3:.textf)
+                                          0006(000052aa:.textf)
+     SECTION=.data
+0005 rble_host
+     SECTION=.textf
+                 _RBLE_Init
+                                 0000430e 0011(00006893:.textf)
+                 _rBLE_Exit
+                                 000043d5
+                 _rBLE_Run
+                                 000043d9 0032(00007308:.textf)
+                 _rBLE_Is_Idle
+                                 00004447 0032(00007396:.textf)
+                 _rBLE_Profile_Init
+                                 0000446c 0006(0000470c:.textf)
+                 _RBLE_Get_CMD_Buffer
+                                 000044d2 0001(000031ed:.textf)
+                                          0001(00003209:.textf)
+                                          0001(0000323c:.textf)
+                                          0001(000032a2:.textf)
+                                          0001(000032c4:.textf)
+                                          0001(0000337d:.textf)
+                                          0001(00003399:.textf)
+                                          0001(000033c5:.textf)
+                                          0001(000033e6:.textf)
+                                          0001(00003401:.textf)
+                                          0001(0000341d:.textf)
+                                          0001(00003451:.textf)
+                                          0001(0000348e:.textf)
+                                          0001(0000354a:.textf)
+                                          0001(00003574:.textf)
+                                          0001(0000359a:.textf)
+                                          0001(000035c5:.textf)
+                                          0001(000035f0:.textf)
+                                          0001(000036ab:.textf)
+                                          0001(000036c7:.textf)
+                                          0001(000036f2:.textf)
+                                          0001(00003741:.textf)
+                                          0001(00003774:.textf)
+                                          0001(000037c6:.textf)
+                                          0001(0000383d:.textf)
+                                          0001(0000387e:.textf)
+                                          0001(000038a8:.textf)
+                                          0002(00003900:.textf)
+                                          0002(0000391c:.textf)
+                                          0002(00003992:.textf)
+                                          0002(00003a08:.textf)
+                                          0002(00003a59:.textf)
+                                          0002(00003b09:.textf)
+                                          0002(00003b8c:.textf)
+                                          0002(00003c1f:.textf)
+                                          0002(00003c4d:.textf)
+                                          0002(00003c88:.textf)
+                                          0002(00003cc4:.textf)
+                                          0002(00003d0d:.textf)
+                                          0002(00003d58:.textf)
+                                          0003(00003da6:.textf)
+                                          0003(00003ddb:.textf)
+                                          0003(00003e2f:.textf)
+                                          0003(00003e68:.textf)
+                                          0003(00003ec5:.textf)
+                                          0003(00003f15:.textf)
+                                          0003(00003f5a:.textf)
+                                          0004(00003fbc:.textf)
+                                          0004(00003fd9:.textf)
+                                          0004(00003ffc:.textf)
+                                          0004(00004027:.textf)
+                                          0004(00004045:.textf)
+                                          0004(00004080:.textf)
+                                          0004(0000409d:.textf)
+                                          0004(000040d1:.textf)
+                                          0004(00004107:.textf)
+                                          0004(00004129:.textf)
+                                          0004(00004151:.textf)
+                                          0004(0000418b:.textf)
+                                          0004(00004227:.textf)
+                                          0004(00004248:.textf)
+                                          0004(00004263:.textf)
+                                          0004(00004281:.textf)
+                                          0004(000042a5:.textf)
+                                          0004(000042de:.textf)
+                                          0005(00004586:.textf)
+                 _ke_evt_set
+                                 000044e6 0007(0000544e:.textf)
+                                          0008(00005d56:.textf)
+                                          0009(000061f1:.textf)
+                                          0009(00006430:.textf)
+                 _ke_evt_clear
+                                 00004506 0008(00005458:.textf)
+                                          0008(0000567e:.textf)
+                 _RBLE_Data_Set_Start
+                                 00004507 0004(000041a9:.textf)
+                 _RBLE_Data_Set
+                                 00004551 0004(000041b9:.textf)
+                                          0004(000041c7:.textf)
+                                          0004(000041d5:.textf)
+                                          0004(000041dd:.textf)
+                                          0004(00004203:.textf)
+                 _RBLE_Data_Set_End
+                                 000045f9 0004(0000420f:.textf)
+                 _RBLE_Is_Cmd_Buff_Available
+                                 0000460a
+     SECTION=.bss
+                 _rble_init_cb
+                                 000fe900 0005(0000432d:.textf)
+                                          0005(00004331:.textf)
+                                          0005(0000447b:.textf)
+                                          0005(00004480:.textf)
+                                          0005(000044b1:.textf)
+                                          0005(000044b6:.textf)
+                                          0005(000044c6:.textf)
+                                          0005(000044cb:.textf)
+                 _rble_mode
+                                 000fe904 0001(000031ac:.textf)
+                                          0001(00003203:.textf)
+                                          0001(00003236:.textf)
+                                          0001(0000329c:.textf)
+                                          0001(000032bb:.textf)
+                                          0001(00003377:.textf)
+                                          0001(00003393:.textf)
+                                          0001(000033bf:.textf)
+                                          0001(000033e0:.textf)
+                                          0001(000033fb:.textf)
+                                          0001(00003417:.textf)
+                                          0001(0000344b:.textf)
+                                          0001(00003485:.textf)
+                                          0001(00003544:.textf)
+                                          0001(0000356e:.textf)
+                                          0001(00003594:.textf)
+                                          0001(000035bf:.textf)
+                                          0001(000035e7:.textf)
+                                          0001(000036a5:.textf)
+                                          0001(000036c1:.textf)
+                                          0001(000036ec:.textf)
+                                          0001(0000373b:.textf)
+                                          0001(0000376e:.textf)
+                                          0001(000037c0:.textf)
+                                          0001(00003837:.textf)
+                                          0001(00003878:.textf)
+                                          0001(000038a2:.textf)
+                                          0002(000038e6:.textf)
+                                          0002(00003916:.textf)
+                                          0002(0000398c:.textf)
+                                          0002(00003a02:.textf)
+                                          0002(00003a4e:.textf)
+                                          0002(00003b03:.textf)
+                                          0002(00003b81:.textf)
+                                          0002(00003c19:.textf)
+                                          0002(00003c47:.textf)
+                                          0002(00003c82:.textf)
+                                          0002(00003cbe:.textf)
+                                          0002(00003d07:.textf)
+                                          0002(00003d52:.textf)
+                                          0003(00003da0:.textf)
+                                          0003(00003dd5:.textf)
+                                          0003(00003e29:.textf)
+                                          0003(00003e62:.textf)
+                                          0003(00003ebf:.textf)
+                                          0003(00003f0f:.textf)
+                                          0003(00003f54:.textf)
+                                          0004(00003fab:.textf)
+                                          0004(00003fd3:.textf)
+                                          0004(00003ff6:.textf)
+                                          0004(00004021:.textf)
+                                          0004(0000403f:.textf)
+                                          0004(0000407a:.textf)
+                                          0004(00004097:.textf)
+                                          0004(000040cb:.textf)
+                                          0004(00004101:.textf)
+                                          0004(00004123:.textf)
+                                          0004(0000414b:.textf)
+                                          0004(0000416f:.textf)
+                                          0004(00004221:.textf)
+                                          0004(00004242:.textf)
+                                          0004(0000425d:.textf)
+                                          0004(0000427b:.textf)
+                                          0004(0000429f:.textf)
+                                          0004(000042c4:.textf)
+                                          0005(00004318:.textf)
+                                          0005(00004392:.textf)
+                                          0005(00004478:.textf)
+                                          0005(000044ad:.textf)
+                                          0005(000044c2:.textf)
+                 _RBLE_OVER_PACKET_info
+                                 000fe906 0005(0000438b:.textf)
+                                          0005(0000450d:.textf)
+                                          0005(00004516:.textf)
+                                          0005(00004528:.textf)
+                                          0005(0000452e:.textf)
+                                          0005(00004537:.textf)
+                                          0005(0000453e:.textf)
+                                          0005(0000454a:.textf)
+                                          0005(00004566:.textf)
+                                          0005(0000458b:.textf)
+                                          0005(00004599:.textf)
+                                          0005(000045a5:.textf)
+                                          0005(000045ab:.textf)
+                                          0005(000045ae:.textf)
+                                          0005(000045b1:.textf)
+                                          0005(000045c2:.textf)
+                                          0005(000045d2:.textf)
+                                          0005(000045da:.textf)
+                                          0005(000045e8:.textf)
+                                          0005(000045eb:.textf)
+                                          0005(000045ee:.textf)
+                                          0005(000045fa:.textf)
+                                          0006(00004632:.textf)
+                                          0006(0000465e:.textf)
+                                          0006(00004673:.textf)
+                                          0006(00004676:.textf)
+                                          0006(00004686:.textf)
+                                          0006(0000468c:.textf)
+                                          0006(00004695:.textf)
+                                          0006(000046bf:.textf)
+                                          0006(000046c5:.textf)
+                 _evt_buff_rd_cnt
+                                 000fe90e 0005(00004336:.textf)
+                                          0005(00004409:.textf)
+                                          0005(00004417:.textf)
+                                          0005(00004453:.textf)
+                 _evt_buff_wr_cnt
+                                 000fe910 0005(00004339:.textf)
+                                          0005(0000440c:.textf)
+                                          0005(00004450:.textf)
+                                          0005(00004496:.textf)
+                                          0005(0000449e:.textf)
+                 _cmd_buff_rd_cnt
+                                 000fe912 0005(0000433c:.textf)
+                                          0005(000043db:.textf)
+                                          0005(00004406:.textf)
+                                          0005(0000444b:.textf)
+                 _cmd_buff_wr_cnt
+                                 000fe914 0005(0000433f:.textf)
+                                          0005(000043de:.textf)
+                                          0005(00004448:.textf)
+                                          0005(000044d4:.textf)
+                                          0005(000044db:.textf)
+                 _cmd_buf
+                                 000fe916 0005(00004349:.textf)
+                                          0005(000043ed:.textf)
+                                          0005(000044e3:.textf)
+                 _evt_buf
+                                 000fed16 0005(00004354:.textf)
+                                          0005(0000441c:.textf)
+                                          0005(000044a4:.textf)
+                 _Tx_Event_Wr_Cnt
+                                 000ff116 0005(00004426:.textf)
+                                          0005(0000445b:.textf)
+                                          0005(000044f2:.textf)
+                 _Tx_Event_Rd_Cnt
+                                 000ff118 0005(00004423:.textf)
+                                          0005(0000442c:.textf)
+                                          0005(00004458:.textf)
+                 _Rx_Event_Wr_Cnt
+                                 000ff11a 0005(00004436:.textf)
+                                          0005(00004463:.textf)
+                                          0005(00004502:.textf)
+                 _Rx_Event_Rd_Cnt
+                                 000ff11c 0005(00004433:.textf)
+                                          0005(0000443c:.textf)
+                                          0005(00004460:.textf)
+                 _cmd_buff_used_count
+                                 000ff11e 0005(00004342:.textf)
+                                          0005(000044be:.textf)
+                                          0005(000044de:.textf)
+                                          0005(0000460b:.textf)
+                 _RBLE_GAP_Info
+                                 000ff120 0001(000031d6:.textf)
+                                          0001(000031db:.textf)
+                                          0005(0000435f:.textf)
+                                          0006(000046d2:.textf)
+                                          0006(000046d9:.textf)
+                                          0006(00004a4f:.textf)
+                                          0006(00004a54:.textf)
+                 _RBLE_SM_Info
+                                 000ff128 0001(000031df:.textf)
+                                          0001(000031e4:.textf)
+                                          0005(0000436a:.textf)
+                                          0006(00004a5f:.textf)
+                                          0006(00004a66:.textf)
+                                          0006(00004af6:.textf)
+                                          0006(00004afb:.textf)
+                 _RBLE_GATT_Info
+                                 000ff12e 0002(000038f6:.textf)
+                                          0002(000038fa:.textf)
+                                          0005(00004375:.textf)
+                                          0006(00004bdf:.textf)
+                                          0006(00004be6:.textf)
+                                          0006(000051ab:.textf)
+                                          0006(000051b0:.textf)
+                 _RBLE_VS_Info
+                                 000ff132 0004(00003fb5:.textf)
+                                          0004(00003fb9:.textf)
+                                          0005(00004380:.textf)
+                                          0005(00004471:.textf)
+                                          0006(000051bb:.textf)
+                                          0006(000051c2:.textf)
+                                          0006(00005313:.textf)
+                                          0006(00005318:.textf)
+0006 rble_if_api_cb
+     SECTION=.textf
+                 _RBLE_Event_Data_Analisys
+                                 00004612 0005(0000441f:.textf)
+     SECTION=.const
+     SECTION=.bss
+0007 rscip
+     SECTION=.textf
+                 _RSCIP_Initialize
+                                 00005324 0005(000043c4:.textf)
+                 _RSCIP_Write
+                                 000053a9 0005(000043fd:.textf)
+0008 rscip_cntl
+     SECTION=.textf
+                 _RSCIP_Tx_Done
+                                 00005455 0005(0000442f:.textf)
+                 _RSCIP_Rx_Done
+                                 00005679 0005(0000443f:.textf)
+                 _RSCIP_Packet_Ctr_Init
+                                 00005d5e 0007(0000538e:.textf)
+                                          0008(00005495:.textf)
+                                          0008(000055f2:.textf)
+                                          0008(00005867:.textf)
+                 _RSCIP_Time_Up
+                                 00005dad 0008(000054da:.textf)
+                                          0008(000054e0:.textf)
+                                          0008(00005588:.textf)
+                                          0008(0000558e:.textf)
+                                          0008(00005627:.textf)
+                                          0008(0000562d:.textf)
+                 _RSCIP_Packet_Tx
+                                 00005e84 0007(000053a3:.textf)
+                                          0008(0000549c:.textf)
+                                          0008(000054f5:.textf)
+                                          0008(0000552e:.textf)
+                                          0008(00005540:.textf)
+                                          0008(000055d4:.textf)
+                                          0008(000055f9:.textf)
+                                          0008(0000564b:.textf)
+                                          0008(0000565e:.textf)
+                                          0008(00005668:.textf)
+                                          0008(00005673:.textf)
+                                          0008(0000586e:.textf)
+                                          0008(00005bdc:.textf)
+                                          0008(00005bea:.textf)
+                                          0008(00005bf1:.textf)
+                                          0008(00005c28:.textf)
+                                          0008(00005c74:.textf)
+                                          0008(00005cfe:.textf)
+                                          0008(00005e28:.textf)
+                                          0008(00005e59:.textf)
+                                          0008(00005e81:.textf)
+                 _RSCIP_Timer_Init
+                                 00006030 0007(0000539b:.textf)
+     SECTION=.bss
+                 _rscip
+                                 000ff38e 0007(0000539f:.textf)
+                                          0007(000053b0:.textf)
+                                          0007(000053dc:.textf)
+                                          0007(00005407:.textf)
+                                          0008(00005468:.textf)
+                                          0008(0000548f:.textf)
+                                          0008(00005498:.textf)
+                                          0008(000054b8:.textf)
+                                          0008(000054c1:.textf)
+                                          0008(000054c8:.textf)
+                                          0008(000054ce:.textf)
+                                          0008(000054d4:.textf)
+                                          0008(000054d7:.textf)
+                                          0008(000054e6:.textf)
+                                          0008(000054ed:.textf)
+                                          0008(000054f0:.textf)
+                                          0008(000054f8:.textf)
+                                          0008(00005502:.textf)
+                                          0008(00005505:.textf)
+                                          0008(0000550d:.textf)
+                                          0008(00005513:.textf)
+                                          0008(00005519:.textf)
+                                          0008(0000551c:.textf)
+                                          0008(0000551f:.textf)
+                                          0008(00005526:.textf)
+                                          0008(00005529:.textf)
+                                          0008(00005531:.textf)
+                                          0008(00005538:.textf)
+                                          0008(0000553b:.textf)
+                                          0008(00005543:.textf)
+                                          0008(0000554d:.textf)
+                                          0008(00005550:.textf)
+                                          0008(00005559:.textf)
+                                          0008(0000555f:.textf)
+                                          0008(00005565:.textf)
+                                          0008(00005568:.textf)
+                                          0008(00005596:.textf)
+                                          0008(0000559c:.textf)
+                                          0008(000055a2:.textf)
+                                          0008(000055a5:.textf)
+                                          0008(000055c5:.textf)
+                                          0008(000055cc:.textf)
+                                          0008(000055cf:.textf)
+                                          0008(000055d7:.textf)
+                                          0008(000055e1:.textf)
+                                          0008(000055e4:.textf)
+                                          0008(000055ec:.textf)
+                                          0008(000055f5:.textf)
+                                          0008(00005615:.textf)
+                                          0008(0000561b:.textf)
+                                          0008(00005621:.textf)
+                                          0008(00005624:.textf)
+                                          0008(00005635:.textf)
+                                          0008(00005638:.textf)
+                                          0008(0000563b:.textf)
+                                          0008(00005642:.textf)
+                                          0008(00005645:.textf)
+                                          0008(0000564e:.textf)
+                                          0008(00005655:.textf)
+                                          0008(00005658:.textf)
+                                          0008(00005830:.textf)
+                                          0008(0000586a:.textf)
+                                          0008(000058a0:.textf)
+                                          0008(00005975:.textf)
+                                          0008(00005a27:.textf)
+                                          0008(00005b3b:.textf)
+                                          0008(00005b41:.textf)
+                                          0008(00005b72:.textf)
+                                          0008(00005bcc:.textf)
+                                          0008(00005bd4:.textf)
+                                          0008(00005be3:.textf)
+                                          0008(00005bf4:.textf)
+                                          0008(00005bfc:.textf)
+                                          0008(00005c13:.textf)
+                                          0008(00005c2f:.textf)
+                                          0008(00005c3f:.textf)
+                                          0008(00005c7b:.textf)
+                                          0008(00005c92:.textf)
+                                          0008(00005caf:.textf)
+                                          0008(00005cb9:.textf)
+                                          0008(00005cbd:.textf)
+                                          0008(00005cc3:.textf)
+                                          0008(00005cf4:.textf)
+                                          0008(00005d05:.textf)
+                                          0008(00005d0f:.textf)
+                                          0008(00005d13:.textf)
+                                          0008(00005d2b:.textf)
+                                          0008(00005d91:.textf)
+                                          0008(00005d95:.textf)
+                                          0008(00005d98:.textf)
+                                          0008(00005d9b:.textf)
+                                          0008(00005db2:.textf)
+                                          0008(00005db9:.textf)
+                                          0008(00005dd9:.textf)
+                                          0008(00005e07:.textf)
+                                          0008(00005e37:.textf)
+                                          0008(00005e88:.textf)
+                                          0008(00005eb0:.textf)
+                                          0008(00005ef1:.textf)
+                                          0008(00005ef4:.textf)
+                                          0008(00005f25:.textf)
+                                          0008(00005f3a:.textf)
+                                          0008(00005f75:.textf)
+                                          0008(00005fd6:.textf)
+                                          0008(00005fe7:.textf)
+                                          0008(00005ff0:.textf)
+                                          0008(00005ffe:.textf)
+                                          0008(00006013:.textf)
+                                          0008(0000602b:.textf)
+                                          0009(00006193:.textf)
+                 _callback_func
+                                 000ff394 0007(00005357:.textf)
+                                          0007(0000535b:.textf)
+                                          0007(00005363:.textf)
+                                          0007(00005367:.textf)
+                                          0007(0000536f:.textf)
+                                          0007(00005373:.textf)
+                                          0007(0000537b:.textf)
+                                          0007(0000537f:.textf)
+                                          0007(00005387:.textf)
+                                          0007(0000538b:.textf)
+                                          0008(0000549f:.textf)
+                                          0008(000054a7:.textf)
+                                          0008(0000556f:.textf)
+                                          0008(00005577:.textf)
+                                          0008(000055ac:.textf)
+                                          0008(000055b4:.textf)
+                                          0008(000055fc:.textf)
+                                          0008(00005604:.textf)
+                                          0008(00005871:.textf)
+                                          0008(00005879:.textf)
+                                          0008(00005933:.textf)
+                                          0008(00005938:.textf)
+                                          0008(000059e2:.textf)
+                                          0008(000059e7:.textf)
+                                          0008(00005afc:.textf)
+                                          0008(00005b01:.textf)
+                                          0008(00005b45:.textf)
+                                          0008(00005b4a:.textf)
+                                          0008(00005cc7:.textf)
+                                          0008(00005ccf:.textf)
+                                          0008(00005d19:.textf)
+                                          0008(00005d21:.textf)
+                                          0008(00005ddd:.textf)
+                                          0008(00005de5:.textf)
+                                          0008(00005e0b:.textf)
+                                          0008(00005e13:.textf)
+                                          0008(00005e3b:.textf)
+                                          0008(00005e43:.textf)
+                 _write_packet
+                                 000ff3a8 0007(000053ea:.textf)
+                                          0007(000053f2:.textf)
+                                          0007(0000541f:.textf)
+                                          0008(00005922:.textf)
+                                          0008(0000592d:.textf)
+                                          0008(000059d1:.textf)
+                                          0008(000059dc:.textf)
+                                          0008(00005aeb:.textf)
+                                          0008(00005af6:.textf)
+                                          0008(00005d73:.textf)
+                                          0008(00005e6d:.textf)
+                                          0008(00005f06:.textf)
+                                          0008(00005f32:.textf)
+                                          0008(00005f7f:.textf)
+                                          0008(00005f98:.textf)
+                 _tx_packet_ctr
+                                 000ff3b8 0007(000053fd:.textf)
+                                          0007(0000540d:.textf)
+                                          0007(00005418:.textf)
+                                          0007(00005437:.textf)
+                                          0007(0000543c:.textf)
+                                          0007(00005446:.textf)
+                                          0008(00005661:.textf)
+                                          0008(00005919:.textf)
+                                          0008(00005942:.textf)
+                                          0008(00005945:.textf)
+                                          0008(0000594c:.textf)
+                                          0008(00005966:.textf)
+                                          0008(000059c8:.textf)
+                                          0008(000059f1:.textf)
+                                          0008(000059f4:.textf)
+                                          0008(000059fb:.textf)
+                                          0008(00005a15:.textf)
+                                          0008(00005ae2:.textf)
+                                          0008(00005b0b:.textf)
+                                          0008(00005b0e:.textf)
+                                          0008(00005b15:.textf)
+                                          0008(00005b2f:.textf)
+                                          0008(00005d5f:.textf)
+                                          0008(00005d62:.textf)
+                                          0008(00005d65:.textf)
+                                          0008(00005d68:.textf)
+                                          0008(00005d6b:.textf)
+                                          0008(00005e64:.textf)
+                                          0008(00005e67:.textf)
+                                          0008(00005e79:.textf)
+                                          0008(00005e7c:.textf)
+                                          0008(00005efe:.textf)
+                                          0008(00005f79:.textf)
+                                          0008(00005f91:.textf)
+                                          0008(00005fbe:.textf)
+                                          0008(00005fc1:.textf)
+                 _tx
+                                 000ff3bd 0008(00005b69:.textf)
+                                          0008(00005bb8:.textf)
+                                          0008(00005bc1:.textf)
+                                          0008(00005d9e:.textf)
+                                          0008(00005da1:.textf)
+                                          0008(00005e75:.textf)
+                                          0008(00005edd:.textf)
+                                          0008(00005f12:.textf)
+                                          0008(00005f18:.textf)
+                                          0008(00005f9c:.textf)
+                                          0008(00005fa8:.textf)
+                 _rx
+                                 000ff3bf 0008(00005a83:.textf)
+                                          0008(00005b5b:.textf)
+                                          0008(00005b63:.textf)
+                                          0008(00005da4:.textf)
+                                          0008(00005da7:.textf)
+                 _ack_ctr
+                                 000ff3c1 0008(000058cd:.textf)
+                                          0008(000058e1:.textf)
+                                          0008(0000593e:.textf)
+                                          0008(00005957:.textf)
+                                          0008(0000595f:.textf)
+                                          0008(0000597c:.textf)
+                                          0008(00005990:.textf)
+                                          0008(000059ed:.textf)
+                                          0008(00005a06:.textf)
+                                          0008(00005a0e:.textf)
+                                          0008(00005a8e:.textf)
+                                          0008(00005aad:.textf)
+                                          0008(00005b07:.textf)
+                                          0008(00005b20:.textf)
+                                          0008(00005b28:.textf)
+                                          0008(00005daa:.textf)
+                                          0008(00005e5d:.textf)
+                                          0008(00005e71:.textf)
+                                          0008(00005fab:.textf)
+                                          0008(00005faf:.textf)
+                                          0008(00005fb4:.textf)
+                 _tx_done
+                                 000ff3c4 0007(00005449:.textf)
+                                          0008(0000545c:.textf)
+                                          0008(00005465:.textf)
+                                          0008(0000566b:.textf)
+                                          0008(00005676:.textf)
+                                          0009(0000609f:.textf)
+                                          0009(000060a2:.textf)
+                                          0009(000061ec:.textf)
+                 _read_packet_buf
+                                 000ff3c6 0008(000056f3:.textf)
+                                          0008(00005a5e:.textf)
+                                          0008(00005a61:.textf)
+                                          0008(00005b51:.textf)
+                 _retry_count
+                                 000ff446 0008(0000596e:.textf)
+                                          0008(00005a1d:.textf)
+                                          0008(00005b34:.textf)
+                                          0008(00005c10:.textf)
+                                          0008(00005c8f:.textf)
+                                          0008(00005dcc:.textf)
+                                          0008(00005dcf:.textf)
+                                          0008(00005dfd:.textf)
+                                          0008(00005e00:.textf)
+                                          0008(00005e2d:.textf)
+                                          0008(00005e30:.textf)
+                                          0008(00006031:.textf)
+                                          0008(00006034:.textf)
+                                          0008(00006037:.textf)
+0009 rscip_uart
+     SECTION=.textf
+                 _RSCIP_Uart_Init
+                                 00006075 0007(00005392:.textf)
+                 _RSCIP_Uart_Write
+                                 000060b6 0008(00005f8c:.textf)
+                                          0008(00006023:.textf)
+                 _RSCIP_Uart_Read_Start
+                                 000061d9 0009(000060a8:.textf)
+                                          0009(00006435:.textf)
+                                          0009(00006438:.textf)
+                 _RSCIP_Uart_Tx_Done
+                                 000061e8 0014(00006dce:.textf)
+                 _RSCIP_Uart_Rx_Done
+                                 000061f4 0014(00006dca:.textf)
+                 _RSCIP_Uart_Rx_Error
+                                 00006437 0014(00006dd2:.textf)
+                 _RSCIP_Uart_Rx_FirstByte
+                                 0000643a
+                 _RSCIP_Uart_Rx_Complete
+                                 0000644b
+                 _RSCIP_Can_Sleep
+                                 00006461 0032(000073a4:.textf)
+     SECTION=.bss
+                 _uart
+                                 000ff44a 0008(00005692:.textf)
+                                          0008(000056ac:.textf)
+                                          0008(00005709:.textf)
+                                          0008(00005730:.textf)
+                                          0008(00005748:.textf)
+                                          0008(0000575f:.textf)
+                                          0008(00005d4c:.textf)
+                                          0009(0000608b:.textf)
+                                          0009(0000625b:.textf)
+                                          0009(00006299:.textf)
+                                          0009(000062b1:.textf)
+                 _uart_rp
+                                 000ff768 0008(00005695:.textf)
+                                          0008(0000579f:.textf)
+                 _uart_wp
+                                 000ff76a 0009(0000625e:.textf)
+                                          0009(000062b4:.textf)
+                                          0009(00006313:.textf)
+                                          0009(00006350:.textf)
+                                          0009(00006388:.textf)
+                                          0009(000063b7:.textf)
+                                          0009(000063d6:.textf)
+                                          0009(00006402:.textf)
+                                          0009(0000640b:.textf)
+                 _uart_ctr
+                                 000ff76c 0008(00005682:.textf)
+                                          0008(00005d36:.textf)
+                                          0008(00005d40:.textf)
+                                          0009(00006099:.textf)
+                                          0009(0000609c:.textf)
+                                          0009(0000624f:.textf)
+                                          0009(000062a5:.textf)
+                                          0009(00006413:.textf)
+                                          0009(0000641b:.textf)
+                 _uart_rx_buf
+                                 000ff76e 0009(000061e2:.textf)
+                                          0009(0000622d:.textf)
+                                          0009(00006238:.textf)
+                                          0009(00006240:.textf)
+                                          0009(00006281:.textf)
+                                          0009(000062cb:.textf)
+                                          0009(000062d6:.textf)
+                                          0009(000062db:.textf)
+                                          0009(000062fa:.textf)
+                                          0009(00006304:.textf)
+                                          0009(00006309:.textf)
+                                          0009(00006318:.textf)
+                                          0009(0000633a:.textf)
+                                          0009(00006344:.textf)
+                                          0009(00006349:.textf)
+                                          0009(00006355:.textf)
+                                          0009(0000637b:.textf)
+                                          0009(00006385:.textf)
+                                          0009(0000638d:.textf)
+                                          0009(000063aa:.textf)
+                                          0009(000063fc:.textf)
+                                          0009(00006426:.textf)
+                 _uart_tx_buf
+                                 000ff76f 0009(000060c5:.textf)
+                                          0009(000060e2:.textf)
+                                          0009(00006101:.textf)
+                                          0009(00006107:.textf)
+                                          0009(00006115:.textf)
+                                          0009(0000612b:.textf)
+                                          0009(00006139:.textf)
+                                          0009(0000616a:.textf)
+                                          0009(00006170:.textf)
+                                          0009(0000617e:.textf)
+                                          0009(000061a5:.textf)
+                                          0009(000061a9:.textf)
+                                          0009(000061b1:.textf)
+                                          0009(000061bb:.textf)
+                                          0009(000061ca:.textf)
+0010 scps
+     SECTION=.textf
+                 _RBLE_SCP_Server_Enable
+                                 0000647b 0011(00006b44:.textf)
+                 _RBLE_SCP_Server_Disable
+                                 000064f8
+                 _RBLE_SCP_Server_Send_Notify
+                                 00006528 0011(00006975:.textf)
+                 _RBLE_SCP_Server_Send_Indicate
+                                 00006552
+     SECTION=.dataR
+                 _scps_info
+                                 000ffb12 0010(00006486:.textf)
+                                          0010(000064bc:.textf)
+                                          0010(000064c8:.textf)
+                                          0010(000064cd:.textf)
+                                          0010(000064d2:.textf)
+                                          0010(000064dd:.textf)
+                                          0010(000064e5:.textf)
+                                          0010(000064e8:.textf)
+                                          0010(000064ee:.textf)
+                                          0010(000064fb:.textf)
+                                          0010(00006505:.textf)
+                                          0010(0000650e:.textf)
+                                          0010(00006519:.textf)
+                                          0010(0000651e:.textf)
+                                          0010(0000652d:.textf)
+                                          0010(00006536:.textf)
+                                          0010(0000653f:.textf)
+                                          0010(00006557:.textf)
+                                          0010(00006560:.textf)
+                                          0010(00006569:.textf)
+                                          0010(00006583:.textf)
+                                          0010(00006589:.textf)
+                                          0010(00006591:.textf)
+                                          0010(00006596:.textf)
+                                          0010(000065b7:.textf)
+                                          0010(000065bc:.textf)
+                                          0010(000065c2:.textf)
+                                          0010(000065ce:.textf)
+                                          0010(000065d3:.textf)
+                                          0010(000065e7:.textf)
+                                          0010(000065fd:.textf)
+                                          0010(00006602:.textf)
+                                          0010(00006620:.textf)
+                                          0010(00006625:.textf)
+                                          0010(00006636:.textf)
+                                          0010(0000664f:.textf)
+                                          0010(00006674:.textf)
+                                          0010(00006681:.textf)
+                                          0010(00006687:.textf)
+                                          0010(000066cf:.textf)
+                                          0010(000066d8:.textf)
+                                          0010(000066e7:.textf)
+                                          0010(0000676a:.textf)
+                                          0010(000067a2:.textf)
+                                          0010(000067b0:.textf)
+                                          0010(000067c2:.textf)
+                                          0010(000067ce:.textf)
+                                          0010(000067dc:.textf)
+                                          0010(00006812:.textf)
+                                          0010(0000681e:.textf)
+                                          0010(0000683a:.textf)
+                                          0010(00006852:.textf)
+                                          0010(0000685b:.textf)
+                                          0010(00006860:.textf)
+                                          0010(00006872:.textf)
+     SECTION=.data
+0011 app
+     SECTION=.textf
+                 _APP_Init
+                                 0000688c 0032(000072fa:.textf)
+                 _APP_Run
+                                 000068da 0032(00007304:.textf)
+                 _APP_Is_Idle
+                                 00006b69 0032(0000739d:.textf)
+                 _APP_Send_Data
+                                 00006d6c 0011(00006d61:.textf)
+                                          0011(00006d64:.textf)
+                                          0011(00006d77:.textf)
+                                          0011(00006d7a:.textf)
+                 _APP_Disconnect
+                                 00006d82
+     SECTION=.data
+     SECTION=.bss
+     SECTION=.dataR
+0012 lcd
+0013 plf
+0014 uart
+     SECTION=.textf
+                 _serial_init
+                                 00006dae 0009(00006077:.textf)
+                 _serial_exit
+                                 00006db0 0005(000043d6:.textf)
+                 _serial_read
+                                 00006db1 0009(000061e5:.textf)
+                                          0009(0000623c:.textf)
+                                          0009(000063cf:.textf)
+                                          0009(000063f8:.textf)
+                                          0009(00006429:.textf)
+                 _serial_write
+                                 00006dbd 0009(000061b6:.textf)
+                 _uart_sr_isr
+                                 00006dc9 0034(00007b37:.textf)
+                 _uart_st_isr
+                                 00006dcd 0034(00007b3f:.textf)
+                 _uart_sre_isr
+                                 00006dd1 0034(00007b3b:.textf)
+                                          0034(00007b43:.textf)
+0015 timer
+     SECTION=.textf
+                 _RBLE_Init_Timer
+                                 00006dd5 0032(000072f0:.textf)
+                 _RBLE_Set_Timer
+                                 00006de3 0008(000054e2:.textf)
+                                          0008(00005590:.textf)
+                                          0008(0000562f:.textf)
+                 _RBLE_Clear_Timer
+                                 00006deb 0008(00005971:.textf)
+                                          0008(00005a20:.textf)
+                                          0008(00005b37:.textf)
+                                          0008(00005c0c:.textf)
+                                          0008(00005c8b:.textf)
+                                          0008(00005cef:.textf)
+                                          0008(00005cf9:.textf)
+                                          0008(00005dae:.textf)
+                 _RBLE_Set_Timer_Id
+                                 00006def 0011(00006d67:.textf)
+                                          0011(00006d7d:.textf)
+                 _RBLE_Clear_Timer_Id
+                                 00006df9 0011(00006bfa:.textf)
+                                          0011(00006d59:.textf)
+                 _rBLE_Is_Timeup_Call_Func
+                                 00006dfc 0005(00004444:.textf)
+                 _RBLE_Terminate_Timer
+                                 00006e3d
+                 _rBLE_Timer_Can_Sleep
+                                 00006e5d 0032(000073ab:.textf)
+                 _timer_isr
+                                 00006ec3 0019(0000020b:.text)
+     SECTION=.bss
+                 _rBLE_Timer_Mem
+                                 000ff962 0015(00006dff:.textf)
+                                          0015(00006e5e:.textf)
+                                          0015(00006e91:.textf)
+                                          0015(00006eb6:.textf)
+                                          0015(00006ec5:.textf)
+                 _rBLE_Timer_Init
+                                 000ff97a 0015(00006dd6:.textf)
+                                          0015(00006ddf:.textf)
+                                          0015(00006e3f:.textf)
+                                          0015(00006e49:.textf)
+                                          0015(00006e84:.textf)
+0016 r_cg_cgc
+     SECTION=.textf
+                 _R_CGC_Create
+                                 00006ef2 0035(00007b52:.textf)
+0017 r_cg_cgc_user
+     SECTION=.textf
+                 _R_CGC_Get_ResetSource
+                                 00006f06 0035(00007b4a:.textf)
+0018 r_cg_it
+     SECTION=.textf
+                 _R_IT_Create
+                                 00006f09 0035(00007b5a:.textf)
+                 _R_IT_Start
+                                 00006f22 0015(00006ddb:.textf)
+                 _R_IT_Stop
+                                 00006f2f 0015(00006e45:.textf)
+0019 r_cg_it_user
+     SECTION=.bss
+                 _g_SampleCounter
+                                 000ff97c 0019(00000230:.text)
+                                          0019(00000233:.text)
+                                          0019(00000246:.text)
+                 _g_SleeveNormalCounter
+                                 000ff97e 0019(0000032b:.text)
+                                          0019(00000332:.text)
+                                          0019(0000033b:.text)
+     SECTION=.text
+0020 r_cg_port
+     SECTION=.textf
+                 _R_PORT_Create
+                                 00006f3c 0035(00007b4e:.textf)
+0021 r_cg_port_user
+0022 cstart
+     SECTION=.text
+                 _start
+                                 0000044f
+                 _exit
+                                 000004a0 0022(000004a1:.text)
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0023 stkinit
+     SECTION=.textf
+                 _stkinit
+                                 00006f58
+0024 r_cg_lcd
+     SECTION=.textf
+                 _R_LCD_Create
+                                 00006f9c 0035(00007b66:.textf)
+                 _R_LCD_Start
+                                 00007016 0011(00006d39:.textf)
+                                          0031(00000563:.text)
+                                          0032(0000771b:.textf)
+                 _R_LCD_Stop
+                                 0000701a 0019(00000221:.text)
+                                          0031(0000057f:.text)
+                 _R_LCD_Voltage_On
+                                 0000701e 0011(00006d35:.textf)
+                                          0031(0000055f:.text)
+                 _R_LCD_Voltage_Off
+                                 00007051
+0025 r_cg_lcd_user
+0026 r_cg_12adc
+     SECTION=.const
+                 _g_12ad_adansa0_gui
+                                 0000317c
+                 _g_12ad_adexicr_gui
+                                 0000317e
+     SECTION=.textf
+                 _R_12ADC_Create
+                                 0000705f 0035(00007b6a:.textf)
+                 _R_12ADC_Start
+                                 0000709a 0032(0000735f:.textf)
+                 _R_12ADC_Stop
+                                 000070a8
+                 _R_12ADC_Get_ValueResult
+                                 000070b6 0027(000004b6:.text)
+0027 r_cg_12adc_user
+     SECTION=.text
+0028 r_cg_iica
+     SECTION=.textf
+                 _R_IICA0_Create
+                                 00007125
+                 _R_IICA0_Stop
+                                 00007178
+                 _R_IICA0_StopCondition
+                                 0000717d
+                 _R_IICA0_Master_Send
+                                 00007182
+                 _R_IICA0_Master_Receive
+                                 000071bf
+     SECTION=.bss
+                 _g_iica0_master_status_flag
+                                 000ff984 0028(000071ac:.textf)
+                                          0028(000071ed:.textf)
+                                          0029(0000720d:.textf)
+                                          0029(0000721a:.textf)
+                 _g_iica0_slave_status_flag
+                                 000ff985
+                 _gp_iica0_rx_address
+                                 000ff986 0028(000071ea:.textf)
+                                          0029(00007244:.textf)
+                                          0029(0000724a:.textf)
+                 _g_iica0_rx_len
+                                 000ff988 0028(000071e2:.textf)
+                                          0029(0000723f:.textf)
+                                          0029(00007253:.textf)
+                 _g_iica0_rx_cnt
+                                 000ff98a 0028(000071e6:.textf)
+                                          0029(0000723c:.textf)
+                                          0029(0000724d:.textf)
+                                          0029(00007250:.textf)
+                 _gp_iica0_tx_address
+                                 000ff98c 0028(000071a9:.textf)
+                                          0029(00007281:.textf)
+                                          0029(00007289:.textf)
+                 _g_iica0_tx_cnt
+                                 000ff98e 0028(000071a5:.textf)
+                                          0029(00007205:.textf)
+                                          0029(0000722f:.textf)
+                                          0029(00007270:.textf)
+                                          0029(00007278:.textf)
+                                          0029(0000728c:.textf)
+0029 r_cg_iica_user
+     SECTION=.text
+     SECTION=.textf
+0030 r_cg_intp
+     SECTION=.textf
+                 _R_INTC_Create
+                                 00007294 0035(00007b5e:.textf)
+                 _R_INTC0_Start
+                                 000072ce 0032(000072e5:.textf)
+                 _R_INTC0_Stop
+                                 000072d5
+0031 r_cg_intp_user
+     SECTION=.text
+0032 r_cg_main
+     SECTION=.const
+                 _g_NumberData
+                                 00003180 0032(00007722:.textf)
+                                          0032(0000772f:.textf)
+                                          0032(0000773c:.textf)
+                                          0032(00007749:.textf)
+                                          0032(00007759:.textf)
+                                          0032(00007768:.textf)
+                                          0032(00007779:.textf)
+                                          0032(00007786:.textf)
+                                          0032(000077dc:.textf)
+                                          0032(000077f0:.textf)
+                                          0032(00007804:.textf)
+                                          0032(00007818:.textf)
+     SECTION=.textf
+                 _main
+                                 000072dc 0022(0000049c:.text)
+                 _DataAbs
+                                 000073ca 0032(0000740c:.textf)
+                                          0032(0000742e:.textf)
+                                          0032(00007501:.textf)
+                 _CalculatePressure
+                                 000073d4 0032(00007365:.textf)
+                 _SPNoiseFilter
+                                 000075c4 0032(0000748d:.textf)
+                 _DPNoiseFilter
+                                 000075e8 0032(00007560:.textf)
+                 _QueuePulseData
+                                 00007606 0032(00007368:.textf)
+                 _CalculatePulse
+                                 00007656 0032(0000736b:.textf)
+                 _LCDView
+                                 0000771a 0011(00006d44:.textf)
+                                          0031(0000056e:.text)
+                 _LCDErrorInfo
+                                 00007752 0032(00007342:.textf)
+                 _RefreshLCD
+                                 00007790 0019(00000287:.text)
+                                          0019(000002a4:.text)
+                                          0019(000002c1:.text)
+                 _Delayus
+                                 0000782b 0032(00007847:.textf)
+                                          0032(0000784d:.textf)
+                                          0032(00007853:.textf)
+                                          0032(00007859:.textf)
+                                          0032(0000785f:.textf)
+                                          0032(0000787e:.textf)
+                                          0032(00007888:.textf)
+                                          0032(00007890:.textf)
+                                          0032(00007898:.textf)
+                                          0032(000078a0:.textf)
+                                          0032(000078a8:.textf)
+                                          0032(000078b1:.textf)
+                                          0032(000078b9:.textf)
+                                          0032(000078c1:.textf)
+                                          0032(000078c9:.textf)
+                                          0032(000078d1:.textf)
+                                          0032(000078f2:.textf)
+                                          0032(000078fa:.textf)
+                                          0032(00007901:.textf)
+                                          0032(00007914:.textf)
+                                          0032(00007925:.textf)
+                                          0032(0000793e:.textf)
+                                          0032(00007954:.textf)
+                                          0032(0000795b:.textf)
+                                          0032(0000796d:.textf)
+                                          0032(00007989:.textf)
+                                          0032(00007990:.textf)
+                 _Delayms
+                                 00007836
+                 _I2C_Init
+                                 0000786b 0032(000072e9:.textf)
+                 _I2C_Start
+                                 0000787f 0032(0000799e:.textf)
+                 _I2C_Stop
+                                 000078a9 0032(000079ac:.textf)
+                                          0032(000079e0:.textf)
+                 _I2C_WriteByte
+                                 000078d3 0032(000079a3:.textf)
+                 _I2C_ReadByte
+                                 0000792e 0032(000079c4:.textf)
+                                          0032(000079d8:.textf)
+                 _Press_Read
+                                 0000799a 0019(0000024e:.text)
+     SECTION=.bss
+                 _data_received
+                                 000ff990 0010(0000680c:.textf)
+                                          0011(00006d16:.textf)
+                                          0011(00006d1c:.textf)
+                                          0011(00006d22:.textf)
+                                          0011(00006d25:.textf)
+                 _g_MeasureFlag
+                                 000ff992 0011(00006d41:.textf)
+                                          0019(00000225:.text)
+                                          0019(0000023d:.text)
+                                          0031(0000056b:.text)
+                                          0031(00000583:.text)
+                 _g_DataBuffer
+                                 000ff993 0019(00000249:.text)
+                                          0019(000002e0:.text)
+                                          0019(000002ef:.text)
+                                          0019(00000382:.text)
+                                          0019(00000392:.text)
+                 _g_SampleData
+                                 000ff996 0019(00000412:.text)
+                                          0032(0000749c:.textf)
+                                          0032(0000756f:.textf)
+                                          0032(00007676:.textf)
+                 _g_Index
+                                 000ffa96 0019(00000359:.text)
+                                          0019(00000363:.text)
+                                          0019(0000036e:.text)
+                                          0019(0000043a:.text)
+                                          0032(00007357:.textf)
+                 _g_TempIndex
+                                 000ffa98 0019(000002e5:.text)
+                                          0019(000002f7:.text)
+                                          0019(00000301:.text)
+                                          0019(00000345:.text)
+                                          0019(0000034a:.text)
+                                          0019(00000355:.text)
+                                          0019(00000387:.text)
+                                          0019(0000043f:.text)
+                                          0032(00007353:.textf)
+                 _g_TempData
+                                 000ffa9a 0019(000002f2:.text)
+                                          0019(00000304:.text)
+                                          0019(00000307:.text)
+                                          0019(0000030a:.text)
+                                          0019(00000314:.text)
+                                          0019(00000395:.text)
+                                          0019(000003b2:.text)
+                                          0019(00000425:.text)
+                                          0019(0000042f:.text)
+                                          0019(00000432:.text)
+                 _g_DiffValue
+                                 000ffabc 0019(000003f4:.text)
+                                          0032(000073d8:.textf)
+                                          0032(000073db:.textf)
+                                          0032(000073f6:.textf)
+                                          0032(00007409:.textf)
+                                          0032(00007428:.textf)
+                                          0032(000074fb:.textf)
+                                          0032(000075d3:.textf)
+                                          0032(000075d9:.textf)
+                                          0032(000075f2:.textf)
+                                          0032(000075f8:.textf)
+                                          0032(0000760e:.textf)
+                                          0032(00007621:.textf)
+                                          0032(0000762e:.textf)
+                                          0032(00007642:.textf)
+                                          0032(00007649:.textf)
+                                          0032(0000766e:.textf)
+                 _g_SampleDataIndex
+                                 000ffafc 0019(00000371:.text)
+                                          0019(000003ed:.text)
+                                          0019(0000042c:.text)
+                 _g_PulseData
+                                 000ffafd 0011(00006963:.textf)
+                                          0019(000002bc:.text)
+                                          0032(0000732a:.textf)
+                                          0032(0000736e:.textf)
+                 _g_HighPressureData
+                                 000ffafe 0011(00006957:.textf)
+                                          0019(00000282:.text)
+                                          0032(00007333:.textf)
+                                          0032(00007379:.textf)
+                                          0032(000074ec:.textf)
+                 _g_LowPressureData
+                                 000ffaff 0011(0000695d:.textf)
+                                          0019(0000029f:.text)
+                                          0032(00007339:.textf)
+                                          0032(0000737f:.textf)
+                                          0032(000075bf:.textf)
+                 _g_BatteryLevel
+                                 000ffb00 0011(00006969:.textf)
+                                          0027(000004e5:.text)
+                                          0027(000004f7:.text)
+                                          0027(00000513:.text)
+                                          0027(00000518:.text)
+                 _g_I2CError
+                                 000ffb01 0019(00000252:.text)
+                 _g_DisplayData
+                                 000ffb02 0032(0000779b:.textf)
+                                          0032(000077a8:.textf)
+                                          0032(000077bc:.textf)
+                                          0032(000077c8:.textf)
+                                          0032(000077cf:.textf)
+                                          0032(000077ea:.textf)
+                                          0032(000077fe:.textf)
+                                          0032(00007812:.textf)
+                                          0032(00007826:.textf)
+     SECTION=.dataR
+                 _g_RunMode
+                                 000ffc30 0011(00006d28:.textf)
+                                          0011(00006d3d:.textf)
+                                          0019(0000020f:.text)
+                                          0019(0000022c:.text)
+                                          0019(00000258:.text)
+                                          0019(0000025c:.text)
+                                          0019(0000031c:.text)
+                                          0019(0000033e:.text)
+                                          0019(0000035c:.text)
+                                          0019(0000037b:.text)
+                                          0031(00000552:.text)
+                                          0031(00000567:.text)
+                                          0031(0000057c:.text)
+                                          0032(0000730c:.textf)
+                                          0032(0000735a:.textf)
+                                          0032(00007385:.textf)
+                                          0032(0000738b:.textf)
+                                          0032(000073b2:.textf)
+     SECTION=.data
+0033 r_cg_sau
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 000079e6 0035(00007b62:.textf)
+                 _R_UART0_Create
+                                 000079f6 0033(000079f5:.textf)
+                 _R_UART0_Start
+                                 00007a6d 0032(000072ec:.textf)
+                 _R_UART0_Stop
+                                 00007a93
+                 _R_UART0_Receive
+                                 00007ab1 0014(00006db2:.textf)
+                 _R_UART0_Send
+                                 00007ac9 0014(00006dbe:.textf)
+                 _R_UART0_Snooze
+                                 00007aee 0032(000073b8:.textf)
+                 _R_UART2_Snooze
+                                 00007b12
+     SECTION=.bss
+                 _gp_uart0_tx_address
+                                 000ffb06 0033(00007ad5:.textf)
+                                          0033(00007ae4:.textf)
+                                          0034(00000614:.text)
+                                          0034(0000061c:.text)
+                 _g_uart0_tx_count
+                                 000ffb08 0033(00007ad9:.textf)
+                                          0033(00007ae7:.textf)
+                                          0034(000005fd:.text)
+                                          0034(0000061f:.text)
+                 _gp_uart0_rx_address
+                                 000ffb0a 0033(00007ac5:.textf)
+                                          0034(000005c4:.text)
+                                          0034(000005ca:.text)
+                 _g_uart0_rx_count
+                                 000ffb0c 0033(00007abd:.textf)
+                                          0034(000005be:.text)
+                                          0034(000005cd:.text)
+                                          0034(000005d3:.text)
+                 _g_uart0_rx_length
+                                 000ffb0e 0033(00007ac1:.textf)
+                                          0034(000005bb:.text)
+                                          0034(000005d0:.text)
+0034 r_cg_sau_user
+     SECTION=.text
+     SECTION=.textf
+0035 r_cg_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 00007b46 0035(00007b75:.textf)
+                 _hdwinit
+                                 00007b71 0022(00000454:.text)
+0036 r_cg_tau
+     SECTION=.textf
+                 _R_TAU0_Create
+                                 00007b76 0035(00007b56:.textf)
+                 _R_TAU0_Channel0_Start
+                                 00007c46
+                 _R_TAU0_Channel0_Stop
+                                 00007c56 0019(00000377:.text)
+                 _R_TAU0_Channel6_Start
+                                 00007c66 0011(00006d31:.textf)
+                                          0031(0000055b:.text)
+                 _R_TAU0_Channel6_Stop
+                                 00007c7e 0019(00000320:.text)
+                                          0031(00000574:.text)
+                                          0032(00007320:.textf)
+0037 r_cg_tau_user
+     SECTION=.text
+0038 memcmp
+     SECTION=.SLIB
+                 _memcmp
+                                 00000a83 0011(00006abb:.textf)
+0039 rand
+     SECTION=.SLIB
+                 _rand
+                                 00000a95 0011(000069f0:.textf)
+                                          0011(000069f6:.textf)
+                                          0011(00006a57:.textf)
+                                          0011(00006a77:.textf)
+                                          0011(00006a8d:.textf)
+                 _srand
+                                 00000acd
+     SECTION=.data
+     SECTION=.dataR
+0040 memcpy
+     SECTION=.RLIB
+                 _memcpy
+                                 00000627 0001(00003228:.textf)
+                                          0001(00003328:.textf)
+                                          0001(0000334d:.textf)
+                                          0001(0000336a:.textf)
+                                          0001(0000343c:.textf)
+                                          0001(00003475:.textf)
+                                          0001(000034d0:.textf)
+                                          0001(000035b3:.textf)
+                                          0001(00003632:.textf)
+                                          0001(0000370d:.textf)
+                                          0001(0000375f:.textf)
+                                          0001(0000386a:.textf)
+                                          0002(0000397d:.textf)
+                                          0002(000039f3:.textf)
+                                          0002(00003ae1:.textf)
+                                          0002(00003b71:.textf)
+                                          0002(00003bf9:.textf)
+                                          0002(00003d8f:.textf)
+                                          0003(00003dc4:.textf)
+                                          0003(00003e0b:.textf)
+                                          0003(00003e1a:.textf)
+                                          0003(00003e51:.textf)
+                                          0003(00003e9f:.textf)
+                                          0003(00003eae:.textf)
+                                          0003(00003ee9:.textf)
+                                          0003(00003ef8:.textf)
+                                          0003(00003f39:.textf)
+                                          0003(00003f84:.textf)
+                                          0004(000040bc:.textf)
+                                          0004(00004306:.textf)
+                                          0005(000044a7:.textf)
+                                          0005(00004593:.textf)
+                                          0006(00004651:.textf)
+                                          0006(0000467c:.textf)
+                                          0006(0000475d:.textf)
+                                          0006(000047bd:.textf)
+                                          0006(000047f6:.textf)
+                                          0006(0000481d:.textf)
+                                          0006(00004834:.textf)
+                                          0006(0000484e:.textf)
+                                          0006(00004865:.textf)
+                                          0006(00004888:.textf)
+                                          0006(000048c0:.textf)
+                                          0006(00004931:.textf)
+                                          0006(000049bf:.textf)
+                                          0006(00004a20:.textf)
+                                          0006(00004b3b:.textf)
+                                          0006(00004b5e:.textf)
+                                          0006(00004b9a:.textf)
+                                          0006(00004bac:.textf)
+                                          0006(00004bcb:.textf)
+                                          0006(00004cbd:.textf)
+                                          0006(00004e1f:.textf)
+                                          0006(0000501d:.textf)
+                                          0006(00005096:.textf)
+                                          0006(000050d5:.textf)
+                                          0006(00005118:.textf)
+                                          0006(000052bb:.textf)
+                                          0006(000052f2:.textf)
+                                          0010(000065ab:.textf)
+                                          0010(000065f9:.textf)
+                                          0010(0000661c:.textf)
+                                          0010(0000672d:.textf)
+                                          0010(0000674e:.textf)
+                                          0010(0000676d:.textf)
+                                          0011(00006b00:.textf)
+                                          0011(00006b3a:.textf)
+                                          0011(00006be3:.textf)
+                                          0011(00006c10:.textf)
+                                          0011(00006c82:.textf)
+                                          0011(00006ca7:.textf)
+                                          0011(00006cbe:.textf)
+                                          0011(00006cd5:.textf)
+                                          0032(00007728:.textf)
+                                          0032(00007735:.textf)
+                                          0032(00007742:.textf)
+                                          0032(0000774f:.textf)
+                                          0032(0000775f:.textf)
+                                          0032(00007772:.textf)
+                                          0032(0000777f:.textf)
+                                          0032(0000778d:.textf)
+                                          0032(000077e6:.textf)
+                                          0032(000077fa:.textf)
+                                          0032(0000780e:.textf)
+                                          0032(00007822:.textf)
+0041 memset
+     SECTION=.RLIB
+                 _memset
+                                 00000638 0005(0000434c:.textf)
+                                          0005(00004357:.textf)
+                                          0005(00004362:.textf)
+                                          0005(0000436d:.textf)
+                                          0005(00004378:.textf)
+                                          0005(00004383:.textf)
+                                          0005(0000438e:.textf)
+                                          0005(00004474:.textf)
+                                          0005(00004510:.textf)
+                                          0006(00004a0d:.textf)
+                                          0010(000064bf:.textf)
+                                          0011(000068b2:.textf)
+                                          0011(000068bd:.textf)
+                                          0011(000068c8:.textf)
+                                          0011(000068d3:.textf)
+                                          0011(00006c1f:.textf)
+                                          0011(00006c2a:.textf)
+                                          0011(00006c35:.textf)
+0042 _COM_fdiv
+     SECTION=.RLIB
+                 __COM_fdiv
+                                 0000066d 0032(0000744e:.textf)
+                                          0032(000074c1:.textf)
+                                          0032(000074e1:.textf)
+                                          0032(00007521:.textf)
+                                          0032(00007594:.textf)
+                                          0032(000075b4:.textf)
+0043 _COM_fge
+     SECTION=.RLIB
+                 __COM_fge
+                                 00000780 0032(00007474:.textf)
+                                          0032(00007547:.textf)
+0044 _COM_fmul
+     SECTION=.RLIB
+                 __COM_fmul
+                                 000007d4 0032(00007440:.textf)
+                                          0032(000074b1:.textf)
+                                          0032(000074d1:.textf)
+                                          0032(00007513:.textf)
+                                          0032(00007584:.textf)
+                                          0032(000075a4:.textf)
+0045 _COM_ftoul
+     SECTION=.RLIB
+                 __COM_ftoul
+                                 000008b1 0032(000074e7:.textf)
+                                          0032(000075ba:.textf)
+0046 _COM_funordered
+     SECTION=.RLIB
+                 __COM_funordered
+                                 000008bd 0032(00007461:.textf)
+                                          0032(00007534:.textf)
+0047 _COM_ultof
+     SECTION=.RLIB
+                 __COM_ultof
+                                 000008c8 0032(00007414:.textf)
+                                          0032(00007434:.textf)
+                                          0032(000074a5:.textf)
+                                          0032(00007507:.textf)
+                                          0032(00007578:.textf)
+0048 _COM_mulul
+     SECTION=.RLIB
+                 __COM_mulul
+                                 000008ce 0044(0000086c:.RLIB)
+0049 _REL_fcmp
+     SECTION=.RLIB
+                 __REL_fcmp
+                                 0000092b 0043(0000078a:.RLIB)
+0050 _REL_fordered_core
+     SECTION=.RLIB
+                 __REL_fordered_core
+                                 00000963 0043(00000783:.RLIB)
+                                          0046(000008c0:.RLIB)
+0051 _REL_ftol
+     SECTION=.RLIB
+                 __REL_ftol
+                                 0000097f 0045(000008b7:.RLIB)
+0052 _REL_f_check
+     SECTION=.RLIB
+                 __REL_f_check
+                                 000009b4 0042(0000066e:.RLIB)
+                                          0044(000007d5:.RLIB)
+0053 _REL_f_ieee754
+     SECTION=.RLIB
+                 __REL_f_ieee754
+                                 000009e7 0042(0000077d:.RLIB)
+                                          0044(000008ae:.RLIB)
+0054 _REL_f_inf
+     SECTION=.RLIB
+                 __REL_f_inf
+                                 000009f7 0042(0000065d:.RLIB)
+                                          0042(000006dc:.RLIB)
+                                          0042(00000764:.RLIB)
+                                          0044(000007ac:.RLIB)
+                                          0044(000007c0:.RLIB)
+                                          0044(000007d1:.RLIB)
+                                          0044(00000863:.RLIB)
+                                          0044(0000088a:.RLIB)
+0055 _REL_f_round
+     SECTION=.RLIB
+                 __REL_f_round
+                                 00000a01 0042(00000779:.RLIB)
+                                          0044(000008aa:.RLIB)
+0056 _REL_ltof
+     SECTION=.RLIB
+                 __REL_ltof
+                                 00000a20 0047(000008cb:.RLIB)
+0057 _COM_lshr
+     SECTION=.RLIB
+                 __COM_lshr
+                                 00000a6a 0051(000009ab:.RLIB)
+0058 _COM_mului
+     SECTION=.RLIB
+                 __COM_mului
+                                 00000a7f 0048(000008d4:.RLIB)
+                                          0048(000008e3:.RLIB)
+                                          0048(000008f9:.RLIB)
+                                          0048(00000916:.RLIB)
+0059 rlink_generates_01
+     SECTION=.vect
+0060 rlink_generates_02
+     SECTION=.option_byte
+0061 rlink_generates_03
+     SECTION=.monitor1
+     SECTION=.monitor2
+0062 rlink_generates_04
+     SECTION=.security_id
+0063 rlink_generates_05
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __s.constf
+                                 00000080
+                 __e.constf
+                                 00000080
+                 __s.sdata
+                                 00000080
+                 __e.sdata
+                                 00000080
+                 __e.vect
+                                 00000080
+                 __s.option_byte
+                                 000000c0
+                 __e.option_byte
+                                 000000c4
+                 __s.security_id
+                                 000000c4
+                 __s.monitor1
+                                 000000ce
+                 __e.security_id
+                                 000000ce
+                 __s.data
+                                 000000d8
+                 __e.monitor1
+                                 000000d8
+                 __e.data
+                                 000001fe
+                 __s.text
+                                 000001fe
+                 __e.text
+                                 00000627
+                 __s.RLIB
+                                 00000627
+                 __e.RLIB
+                                 00000a83
+                 __s.SLIB
+                                 00000a83
+                 __e.SLIB
+                                 00000ad5
+                 __s.const
+                                 00003000
+                 __s.textf
+                                 00003198
+                 __e.const
+                                 00003198
+                 __e.textf
+                                 00007c96
+                 __s.monitor2
+                                 00017e00
+                 __e.monitor2
+                                 00018000
+                 __s.bss
+                                 000fe900
+                 __RAM_ADDR_START
+                                 000fe900
+                 __e.bss
+                                 000ffb10
+                 __s.dataR
+                                 000ffb10
+                 __e.dataR
+                                 000ffc36
+                 __STACK_ADDR_END
+                                 000ffc36
+                 __s.sbss
+                                 000ffe20
+                 __e.sbss
+                                 000ffe20
+                 __s.sdataR
+                                 000ffe20
+                 __e.sdataR
+                                 000ffe20
+                 __STACK_ADDR_START
+                                 000ffe20 0022(00000451:.text)
+                 __RAM_ADDR_END
+                                 000ffee0

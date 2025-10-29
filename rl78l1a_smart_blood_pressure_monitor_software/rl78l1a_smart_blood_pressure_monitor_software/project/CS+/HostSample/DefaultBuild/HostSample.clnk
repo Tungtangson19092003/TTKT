@@ -1,0 +1,65 @@
+-Input=DefaultBuild\rble_api_gap.obj
+-Input=DefaultBuild\rble_api_gatt.obj
+-Input=DefaultBuild\rble_api_sm.obj
+-Input=DefaultBuild\rble_api_vs.obj
+-Input=DefaultBuild\rble_host.obj
+-Input=DefaultBuild\rble_if_api_cb.obj
+-Input=DefaultBuild\rscip.obj
+-Input=DefaultBuild\rscip_cntl.obj
+-Input=DefaultBuild\rscip_uart.obj
+-Input=DefaultBuild\scps.obj
+-Input=DefaultBuild\app.obj
+-Input=DefaultBuild\plf.obj
+-Input=DefaultBuild\uart.obj
+-Input=DefaultBuild\timer.obj
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_it.obj
+-Input=DefaultBuild\r_cg_it_user.obj
+-Input=DefaultBuild\r_cg_12adc.obj
+-Input=DefaultBuild\r_cg_12adc_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-Input=DefaultBuild\r_cg_lcd.obj
+-Input=DefaultBuild\r_cg_lcd_user.obj
+-Input=DefaultBuild\r_cg_intp.obj
+-Input=DefaultBuild\r_cg_intp_user.obj
+-Input=DefaultBuild\r_cg_tau.obj
+-Input=DefaultBuild\r_cg_tau_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F11MMF.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\HostSample.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.15.01\lib\rl78em4s.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.15.01\lib\malloc_n.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.15.01\lib\rl78em4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=17E00-17FFF
+-USER_OPT_BYTE=EEFFE0
+-ENTry=_start
+-SPLIT_VECT
+-LISt=DefaultBuild\HostSample.map
+-SHow=ALL
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-STACk
+-Total_size
+-NOLOgo
+-end
+-Input=DefaultBuild\HostSample.abs
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F11MMF.DVF
+-OUtput=DefaultBuild\HostSample.hex
+-FOrm=Hexadecimal
+-NOMessage
+-exit
+
